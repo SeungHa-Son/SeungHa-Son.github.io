@@ -2,7 +2,7 @@
 layout: page
 title: 수상
 menu: true
-order: 3
+order: 5
 permalink: /awards/
 ---
 
