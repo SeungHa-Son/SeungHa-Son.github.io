@@ -10,6 +10,12 @@ permalink: /awards/
 
 **2024.06.22**  
 전국 대학생 인공지능드론 경진대회 동상  
+
+[  
+📄 <a href="/assets/pdf/기술-보고서.pdf" target="_blank">기술 보고서</a> ·  
+🏅 <a href="/assets/img/drone-award.jpg" target="_blank">수상 이력</a>  
+]
+
 기관: 대한전자공학회 산업전자소사이어티  
 
 ---
