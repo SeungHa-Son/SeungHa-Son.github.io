@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 수상
+title: 수상 이력
 menu: true
 order: 4
 permalink: /awards/
