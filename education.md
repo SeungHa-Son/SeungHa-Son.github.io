@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 학력·이력
+title: 학력
 menu: true
 order: 1
 permalink: /education/
@@ -10,11 +10,11 @@ permalink: /education/
 
 **2021.03 ~ 2026.02**  
 [대림대학교 AI시스템과](https://dept.daelim.ac.kr/ais/index.do)  
-학점: **3.9 / 4.5**  
-경기도 안양시
+학점 : **3.9 / 4.5**  
+위치 : 경기도 안양시
 
 ---
 
 **2018.03 ~ 2021.02**  
 화홍고등학교  
-경기도 수원시
+위치 : 경기도 수원시

@@ -39,7 +39,7 @@ order: 2
     text-align: center;
   }
 
-  /* 제목 + 링크 줄바꿈 */
+  /* 제목 + 링크 */
   .act-title {
     display: block;
   }
@@ -82,13 +82,9 @@ order: 2
         </div>
         <div class="act-links">
           [
-          <a href="https://www.youtube.com/watch?v=o0KDbAmzD5c&t=4s"
-             target="_blank"
-             rel="noopener noreferrer">영상</a>
+          <a href="https://www.youtube.com/watch?v=o0KDbAmzD5c&t=4s" target="_blank">영상</a>
           ·
-          <a href="https://www.canva.com/design/DAGpWrSq-lI/AndCBvv84OTgOR_fawugjg/edit?utm_content=DAGpWrSq-lI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-             target="_blank"
-             rel="noopener noreferrer">PPT</a>
+          <a href="https://www.canva.com/design/DAGpWrSq-lI/AndCBvv84OTgOR_fawugjg/edit" target="_blank">PPT</a>
           ]
         </div>
       </td>
@@ -104,24 +100,42 @@ order: 2
         </div>
         <div class="act-links">
           [
-          <a href="https://www.youtube.com/watch?v=zuLukIJ4ogs&t=2s"
-             target="_blank"
-             rel="noopener noreferrer">영상</a>
+          <a href="https://www.youtube.com/watch?v=zuLukIJ4ogs&t=2s" target="_blank">영상</a>
           ]
         </div>
       </td>
       <td>대림대학교</td>
     </tr>
 
+    <!-- 코드스쿨 PDF -->
     <tr>
       <td>2024.05.18 ~ 2024.06.08</td>
-      <td>초·중학생 대상으로 한 SW 교육기부 활동</td>
+      <td>
+        <div class="act-title">
+          초·중학생 대상으로 한 SW 교육기부 활동
+        </div>
+        <div class="act-links">
+          [
+          <a href="/assets/pdf/코드스쿨.pdf" target="_blank">코드스쿨 PDF</a>
+          ]
+        </div>
+      </td>
       <td>코드클럽 한국위원회</td>
     </tr>
 
+    <!-- 드론 모션인식 PDF -->
     <tr>
       <td>2024.05.28 ~ 2024.05.30</td>
-      <td>직업체험페스티벌 객체 및 모션인식드론 부스 운영</td>
+      <td>
+        <div class="act-title">
+          직업체험페스티벌 객체 및 모션인식드론 부스 운영
+        </div>
+        <div class="act-links">
+          [
+          <a href="/assets/pdf/드론-모션인식-설명.pdf" target="_blank">드론 모션인식 설명 PDF</a>
+          ]
+        </div>
+      </td>
       <td>인재육성재단</td>
     </tr>
 
@@ -137,9 +151,19 @@ order: 2
       <td>대림대 AI시스템과</td>
     </tr>
 
+    <!-- 직무부트캠프 수료증 PDF -->
     <tr>
       <td>2023.10.13 ~ 2023.12.01</td>
-      <td>기획부터 개발까지 파이썬 백엔드 개발 실무 체험</td>
+      <td>
+        <div class="act-title">
+          기획부터 개발까지 파이썬 백엔드 개발 실무 체험
+        </div>
+        <div class="act-links">
+          [
+          <a href="/assets/pdf/직무부트캠프-수료증.pdf" target="_blank">직무부트캠프 수료증</a>
+          ]
+        </div>
+      </td>
       <td>코멘토 직무부트캠프</td>
     </tr>
 
