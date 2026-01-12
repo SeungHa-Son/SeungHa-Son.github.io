@@ -33,6 +33,12 @@ order: 2
   .act-col-title  { width: 52%; }
   .act-col-org    { width: 20%; }
 
+  /* 🔥 기간 컬럼만 가운데 정렬 */
+  .act-table th:first-child,
+  .act-table td:first-child {
+    text-align: center;
+  }
+
   /* 제목 + 링크 줄바꿈 */
   .act-title {
     display: block;

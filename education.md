@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 학력 / 이력
+title: 학력·이력
 menu: true
 order: 1
 permalink: /education/
