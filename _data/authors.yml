@@ -27,7 +27,7 @@ author1:
   # Rearrange to change the order in which they appear
   social:
     # twitter:         <username>
-    github:          default.github: SeungHa-Son
+    github:         SeungHa-Son
     # email:           mailto:<mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
@@ -77,7 +77,7 @@ author2:
     Open `_data/authors.yml` to edit this text.
   picture:           https://placehold.it/128x128
   twitter:           <username>
-  github:            <SeungHa-Son>
+  github:            <username>
   accent_color:      '#268bd2'
   accent_image:
     background:      '#202020'
