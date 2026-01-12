@@ -132,7 +132,7 @@ order: 2
         </div>
         <div class="act-links">
           [
-          <a href="/assets/pdf/드론-모션인식-설명.pdf" target="_blank">드론 모션인식 설명 PDF</a>
+          <a href="/assets/pdf/드론 모션인식 설명.pdf" target="_blank">드론 모션인식 설명 PDF</a>
           ]
         </div>
       </td>
