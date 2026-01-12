@@ -33,6 +33,18 @@ order: 2
   .act-col-title  { width: 52%; }
   .act-col-org    { width: 20%; }
 
+  /* 제목 + 링크 정렬 */
+  .act-title {
+    display: block;
+  }
+
+  .act-links {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    text-align: center;
+  }
+
   /* 링크 스타일 */
   .act-table a {
     color: #000;
@@ -58,8 +70,11 @@ order: 2
     <tr>
       <td>2025.11.06 ~ 2025.11.07</td>
       <td>
-        시각장애인 보행 보조 장치 (대림테크페어 전시)
-        [
+        <div class="act-title">
+          시각장애인 보행 보조 장치 (대림테크페어 전시)
+        </div>
+        <div class="act-links">
+          [
           <a href="https://www.youtube.com/watch?v=o0KDbAmzD5c&t=4s"
              target="_blank"
              rel="noopener noreferrer">영상</a>
@@ -67,7 +82,8 @@ order: 2
           <a href="https://www.canva.com/design/DAGpWrSq-lI/AndCBvv84OTgOR_fawugjg/edit?utm_content=DAGpWrSq-lI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
              target="_blank"
              rel="noopener noreferrer">PPT</a>
-        ]
+          ]
+        </div>
       </td>
       <td>대림대학교</td>
     </tr>
