@@ -33,13 +33,12 @@ order: 2
   .act-col-title  { width: 52%; }
   .act-col-org    { width: 20%; }
 
-  /* 🔥 기간 컬럼만 가운데 정렬 */
+  /* 기간 컬럼 가운데 정렬 */
   .act-table th:first-child,
   .act-table td:first-child {
     text-align: center;
   }
 
-  /* 제목 + 링크 */
   .act-title {
     display: block;
   }
@@ -51,7 +50,6 @@ order: 2
     text-align: left;
   }
 
-  /* 링크 스타일 */
   .act-table a {
     color: #000;
     text-decoration: none;
@@ -84,7 +82,7 @@ order: 2
           [
           <a href="https://www.youtube.com/watch?v=o0KDbAmzD5c&t=4s" target="_blank">영상</a>
           ·
-          <a href="https://www.canva.com/design/DAGpWrSq-lI/AndCBvv84OTgOR_fawugjg/edit" target="_blank">PPT</a>
+          <a href="/assets/pdf/for blind.pdf" target="_blank">PDF</a>
           ]
         </div>
       </td>
@@ -132,7 +130,9 @@ order: 2
         </div>
         <div class="act-links">
           [
-          <a href="/assets/pdf/드론 모션인식 설명.pdf" target="_blank">드론 모션인식 설명 PDF</a>
+          <a href="/assets/pdf/드론%20모션인식%20설명.pdf" target="_blank">
+            드론 모션인식 설명 PDF
+          </a>
           ]
         </div>
       </td>
@@ -151,7 +151,7 @@ order: 2
       <td>대림대 AI시스템과</td>
     </tr>
 
-    <!-- 직무부트캠프 수료증 PDF -->
+    <!-- 직무부트캠프 수료증 -->
     <tr>
       <td>2023.10.13 ~ 2023.12.01</td>
       <td>
