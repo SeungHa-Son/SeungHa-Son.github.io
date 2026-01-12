@@ -1,41 +1,16 @@
 ---
 layout: page
-title: 학력 / 이력
+title: 손승하
+permalink: /
 ---
 
 <style>
-  .resume-card {
-    max-width: 900px;
-    overflow-x: auto;
-    margin-top: 20px;
-  }
-  .resume-table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-  }
-  .resume-table th,
-  .resume-table td {
-    border: 1px solid #333;
-    padding: 10px;
-    vertical-align: middle;
-    font-size: 15px;
-  }
-  .resume-table th {
-    background: #f5f5f5;
-    width: 120px;
-    text-align: left;
-  }
-  .resume-photo {
-    width: 170px;
-    text-align: center;
-    background: #fff;
-  }
-  .resume-photo img {
-    width: 140px;
-    height: auto;
-    border: 1px solid #999;
-  }
+  .resume-card{max-width:900px; overflow-x:auto;}
+  .resume-table{width:100%; border-collapse:collapse; table-layout:fixed;}
+  .resume-table th,.resume-table td{border:1px solid #333; padding:10px; vertical-align:middle; font-size:15px;}
+  .resume-table th{background:#f5f5f5; width:120px; text-align:left;}
+  .resume-photo{width:170px; text-align:center; background:#fff;}
+  .resume-photo img{width:140px; height:auto; border:1px solid #999;}
 </style>
 
 <div class="resume-card">
