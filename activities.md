@@ -6,13 +6,38 @@ order: 2
 ---
 
 <style>
-  .act-table{width:100%; border-collapse:collapse; table-layout:fixed; font-size:15px;}
-  .act-table th,.act-table td{border:1px solid #333; padding:10px; vertical-align:middle;}
-  .act-table th{background:#f5f5f5; text-align:center;}
-  .act-table td{word-break:keep-all;}
-  .act-col-period{width:28%;}
-  .act-col-title{width:52%;}
-  .act-col-org{width:20%;}
+  .act-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 15px;
+  }
+  .act-table th,
+  .act-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    vertical-align: middle;
+  }
+  .act-table th {
+    background: #f5f5f5;
+    text-align: center;
+  }
+  .act-table td {
+    word-break: keep-all;
+  }
+  .act-col-period { width: 28%; }
+  .act-col-title  { width: 52%; }
+  .act-col-org    { width: 20%; }
+
+  /* 링크 스타일 (선택) */
+  .act-table a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .act-table a:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <table class="act-table">
@@ -26,7 +51,13 @@ order: 2
   <tbody>
     <tr>
       <td>2025.11.06 ~ 2025.11.07</td>
-      <td>시각장애인 보행 보조 장치 (대림테크페어 전시)</td>
+      <td>
+        <a href="https://www.youtube.com/watch?v=o0KDbAmzD5c&t=4s"
+           target="_blank"
+           rel="noopener noreferrer">
+          시각장애인 보행 보조 장치 (대림테크페어 전시)
+        </a>
+      </td>
       <td>대림대학교</td>
     </tr>
     <tr>
@@ -56,7 +87,7 @@ order: 2
     </tr>
     <tr>
       <td>2023.10.13 ~ 2023.12.01</td>
-      <td>기획부턴 개발까지 파이썬 백엔드 개발 실무 체험</td>
+      <td>기획부터 개발까지 파이썬 백엔드 개발 실무 체험</td>
       <td>코멘토 직무부트캠프</td>
     </tr>
     <tr>
