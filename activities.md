@@ -33,7 +33,7 @@ order: 2
   .act-col-title  { width: 52%; }
   .act-col-org    { width: 20%; }
 
-  /* 제목 + 링크 정렬 */
+  /* 제목 + 링크 줄바꿈 */
   .act-title {
     display: block;
   }
@@ -42,7 +42,7 @@ order: 2
     display: block;
     margin-top: 4px;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
   }
 
   /* 링크 스타일 */
@@ -67,6 +67,7 @@ order: 2
   </thead>
 
   <tbody>
+    <!-- 시각장애인 보행 보조 장치 -->
     <tr>
       <td>2025.11.06 ~ 2025.11.07</td>
       <td>
@@ -88,14 +89,20 @@ order: 2
       <td>대림대학교</td>
     </tr>
 
+    <!-- AI Song Cover -->
     <tr>
       <td>2024.11.07 ~ 2024.11.08</td>
       <td>
-        <a href="https://www.youtube.com/watch?v=zuLukIJ4ogs&t=2s"
-           target="_blank"
-           rel="noopener noreferrer">
+        <div class="act-title">
           AI 기반 음성 합성 프로젝트 - AI Song Cover (대림테크페어 전시)
-        </a>
+        </div>
+        <div class="act-links">
+          [
+          <a href="https://www.youtube.com/watch?v=zuLukIJ4ogs&t=2s"
+             target="_blank"
+             rel="noopener noreferrer">영상</a>
+          ]
+        </div>
       </td>
       <td>대림대학교</td>
     </tr>
