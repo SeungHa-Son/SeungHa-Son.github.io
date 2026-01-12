@@ -160,7 +160,7 @@ order: 2
         </div>
         <div class="act-links">
           [
-          <a href="/assets/image/comento.PNG" target="_blank">직무부트캠프 수료증</a>
+          <a href="/assets/img/comento.PNG" target="_blank">직무부트캠프 수료증</a>
           ]
         </div>
       </td>
