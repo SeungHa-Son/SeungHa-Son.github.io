@@ -42,3 +42,16 @@ permalink: /
     </tr>
   </table>
 </div>
+## 🔗 SKILLS
+
+### 🤖 AI
+`YOLO` `TensorFlow` `OpenCV` `Hailo-8`
+
+### 💻 Language
+`Python` `C` `C++` `Java` `SQL`
+
+### ⚙️ Embedded
+`Arduino` `Raspberry Pi` `Linux` `Embedded System` `Firmware`
+
+### 🌐 System / IoT
+`IoT` `Network Programming` `Database` `Cloud Computing`
