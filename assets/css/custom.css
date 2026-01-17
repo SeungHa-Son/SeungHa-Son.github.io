@@ -1,0 +1,10 @@
+/* 햄버거(모바일 메뉴) 버튼 위치 조정 */
+.sidebar-toggle,
+.nav-toggle,
+.menu-toggle,
+#sidebar-toggle,
+#menu-toggle {
+  left: 10px !important;   /* ← 살짝 왼쪽 */
+  top: 10px !important;    /* ↑ 살짝 위 */
+  z-index: 9999 !important;
+}
