@@ -1,10 +1,7 @@
-/* 햄버거(모바일 메뉴) 버튼 위치 조정 */
-.sidebar-toggle,
-.nav-toggle,
-.menu-toggle,
-#sidebar-toggle,
-#menu-toggle {
-  left: 10px !important;   /* ← 살짝 왼쪽 */
-  top: 10px !important;    /* ↑ 살짝 위 */
+/* Hydejack 햄버거 메뉴 버튼(#_menu) 위치 조정 */
+#_menu {
+  position: relative !important;
+  left: -8px !important;   /* ← 왼쪽으로 (원하면 -12px, -16px로 더) */
+  top: 0px !important;
   z-index: 9999 !important;
 }
