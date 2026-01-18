@@ -17,7 +17,6 @@ permalink: /
     width:100%;
     border-collapse:collapse;
     table-layout:fixed;
-    background:#ffffff;
   }
   .resume-table th,
   .resume-table td{
@@ -25,7 +24,6 @@ permalink: /
     padding:10px;
     vertical-align:middle;
     font-size:15px;
-    color:#111;
   }
   .resume-table th{
     background:#f5f5f5;
@@ -44,28 +42,26 @@ permalink: /
   }
 
   /* =====================
-     SKILLS (Black Theme)
+     SKILLS (Yellow bg + Black chips)
   ===================== */
   :root{
-    --outer:#0b0b0b;        /* 바깥 배경: 블랙 */
-    --inner:#111111;        /* 안쪽 카드: 다크 그레이 */
-    --border:#1f2937;
-    --shadow:0 14px 30px rgba(0,0,0,.55);
+    --outer:#f6e27d;          /* 큰 노란 배경 */
+    --inner:#fff3c4;          /* 안쪽 카드 */
+    --border:rgba(17,24,39,.12);
+    --shadow:0 12px 26px rgba(0,0,0,.12);
 
-    --chip-bg:#000000;     /* 칩 배경: 블랙 */
-    --chip-border:#374151; /* 칩 테두리 */
-    --chip-text:#ffffff;   /* 칩 글자: 화이트 */
+    /* 칩: 검정 배경 + 흰 글씨 */
+    --chip-bg:#000000;
+    --chip-text:#ffffff;
 
-    --icon-bg:#000000;
-    --icon-border:#374151;
-
-    --label-text:#ffffff;
+    --icon-bg:#fff1b8;
+    --text:#1f2937;
   }
 
   .skill-box{
     max-width:900px;
     margin:20px auto;
-    padding:22px;
+    padding:20px;
     border-radius:18px;
     background:var(--outer);
     box-shadow:var(--shadow);
@@ -74,16 +70,16 @@ permalink: /
   .skill-card{
     border-radius:16px;
     background:var(--inner);
-    padding:20px;
+    padding:18px;
     border:1px solid var(--border);
   }
 
-  /* ⭐ grid 고정 → Embedded 줄 내려가는 문제 해결 */
+  /* grid 고정 → Embedded 내려가는 문제 해결 */
   .skill-row{
     display:grid;
     grid-template-columns:170px 1fr;
     gap:16px;
-    padding:16px 0;
+    padding:14px 0;
     align-items:start;
   }
 
@@ -99,7 +95,7 @@ permalink: /
     align-items:center;
     font-weight:800;
     font-size:18px;
-    color:var(--label-text);
+    color:var(--text);
     white-space:nowrap;
   }
 
@@ -111,11 +107,10 @@ permalink: /
     align-items:center;
     justify-content:center;
     background:var(--icon-bg);
-    border:1px solid var(--icon-border);
-    color:#ffffff;
+    border:1px solid var(--border);
   }
 
-  /* ✅ 가로 나열 */
+  /* 가로 나열 */
   .skill-tags{
     display:flex;
     flex-wrap:wrap;
@@ -124,22 +119,16 @@ permalink: /
     min-width:0;
   }
 
+  /* ✅ 핵심 변경 부분 */
   .chip{
     padding:8px 14px;
     border-radius:999px;
     font-weight:700;
     font-size:14px;
     line-height:1;
-    background:var(--chip-bg);
-    color:var(--chip-text);
-    border:1px solid var(--chip-border);
+    background:var(--chip-bg);   /* 검정 */
+    color:var(--chip-text);      /* 흰색 */
     white-space:nowrap;
-  }
-
-  /* 살짝 고급스러운 hover */
-  .chip:hover{
-    background:#111827;
-    border-color:#9ca3af;
   }
 </style>
 
@@ -179,7 +168,7 @@ permalink: /
 <!-- =====================
      SKILLS
 ===================== -->
-<h2 style="color:#ffffff;">🔗 SKILLS</h2>
+<h2>🔗 SKILLS</h2>
 
 <div class="skill-box">
   <div class="skill-card">
