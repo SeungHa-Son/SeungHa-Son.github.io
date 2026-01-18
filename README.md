@@ -1,49 +1,48 @@
 # 👨‍💻 Son SeungHa | Portfolio
 
-Welcome to my portfolio repository 👋
-This repository contains the source code for the personal portfolio website of Son SeungHa, an expected graduate of the Department of AI Systems at Daelim University.
-
-GitHub Pages 기반의 정적 사이트로,  
-이력 정보, 기술 스택(SKILLS), 프로젝트 경험, 활동 및 수상 이력을  
-한눈에 확인할 수 있도록 구성되어 있습니다.
+Welcome to my portfolio repository 👋  
+This repository contains the source code for the personal portfolio website of **Son SeungHa**,  
+an expected graduate of the **Department of AI Systems at Daelim University**.
 
 ---
 
-## 🌐 포트폴리오 사이트 주소
+## 🌐 Portfolio Website
 - https://seungha-son.github.io
 
 ---
 
 ## 🧑‍💻 About Me
 - 전공: 대림대학교 **AI시스템학과**
+- 기술에 대한 이해를 기반으로, 사용자 경험과 시장 관점에서 문제를 정의하고  
+  전략적으로 해결하는 마케터를 목표로 하고 있습니다.
 - 관심 분야:
-  - AI 기반 서비스 기획 및 기술 활용
-  - 임베디드·IoT 환경에서의 AI 적용
-  - 기술을 이해하는 마케터 / 커뮤니케이터
+  - AI·반도체 기술 기반 서비스 및 제품 기획
+  - 임베디드·IoT 환경에서의 기술 활용 사례 발굴
+  - 기술과 고객을 연결하는 B2B 마케팅 및 커뮤니케이션
 
 ---
 
-## 🔧 Skills Overview
+## 🔧 Skills
 
-### 🤖 AI / Computer Vision
+### AI / Computer Vision
 - YOLO 기반 객체 인식
-- PyTorch, TensorFlow를 활용한 모델 학습
+- TensorFlow를 활용한 모델 학습
 - OpenCV 기반 영상 처리
 - Hailo-8 엣지 AI 추론 환경 이해
 
-### 💻 Programming Languages
+### Programming Languages
 - Python
 - C / C++
 - Java
 - SQL
 
-### ⚙️ Embedded / System
+### Embedded / System
 - Arduino
 - Raspberry Pi
 - Linux 기반 시스템 운용
-- Embedded System & Firmware 기초 이해
+- 임베디드 시스템 및 펌웨어 기초 이해
 
-### 🌐 System / IoT
+### System / IoT
 - IoT 시스템 구조 이해
 - 네트워크 프로그래밍 기초
 - 데이터베이스 설계 및 활용
@@ -51,59 +50,93 @@ GitHub Pages 기반의 정적 사이트로,
 
 ---
 
-## 🧪 Projects & Experience
-본 사이트에는 다음과 같은 내용을 정리하고 있습니다.
+## 🚀 Projects
 
-- AI 기반 프로젝트 경험
-- 임베디드·로봇·드론 관련 실습
-- 학교 및 외부 교육/캠프 활동
-- 팀 프로젝트 및 협업 경험
-
-각 프로젝트는 **사용 기술, 역할, 문제 해결 과정**을 중심으로 정리되어 있습니다.
-
----
-
-## 🏆 Activities & Achievements
-- 교내·외 비교과 활동 참여
-- 전공 연계 프로젝트 수행
-- 공모전 및 대회 수상 경험
-- 전공 역량 강화 프로그램 이수
-
-세부 내용은 사이트 내 **Activities / Awards 페이지**에서 확인할 수 있습니다.
+### 1. 시각장애인 보행 보조 장치
+**2025.11.06 ~ 2025.11.07**  
+- 시각장애인의 안전한 보행을 돕기 위한 보조 장치 개발  
+- 대림테크페어 전시 프로젝트  
+- 기관: 대림대학교  
+- 결과물:
+  - [영상](https://www.youtube.com/watch?v=o0KDbAmzD5c&t=4s)  
+  - [PDF](./assets/pdf/for%20blind.pdf)
 
 ---
 
-## 🧱 Tech Stack
-- **Frontend**: Markdown, HTML, CSS
-- **Static Site Generator**: Jekyll
-- **Theme**: Hydejack
-- **Deployment**: GitHub Pages
-- **Version Control**: Git & GitHub
+### 2. 학사관리 시스템
+- 학생 및 학사 정보를 관리하기 위한 학사관리 시스템 개발 프로젝트  
+- 데이터 관리 구조 설계 및 시스템 구성 경험  
+- 역할: 백엔드 및 시스템 설계 중심
 
 ---
 
-## 📁 Repository Structure (Key Files)
-- `index.md`  
-  메인 페이지 (이력 요약 + Skills)
-
-- `skills.md`  
-  기술 스택을 문서 형태로 정리한 페이지
-
-- `activities.md / awards.md / education.md`  
-  메뉴에서 접근 가능한 세부 이력 페이지
-
-- `_config.yml`  
-  사이트 전역 설정 및 테마 구성 파일
-
-- `assets/`  
-  이미지, 아이콘, 커스텀 스타일 등 정적 리소스
+### 3. AI 기반 음성 합성 프로젝트 (AI Song Cover)
+**2024.11.07 ~ 2024.11.08**  
+- 딥러닝 기반 음성 분석 및 합성 기술을 활용한 AI 커버곡 생성 프로젝트  
+- 대림테크페어 전시  
+- 기관: 대림대학교  
+- 결과물:
+  - [영상](https://www.youtube.com/watch?v=zuLukIJ4ogs&t=2s)
 
 ---
 
-## 🚀 Deployment
-이 사이트는 GitHub Pages를 통해 자동 배포됩니다.
+### 4. 객체 및 모션 인식 드론
+**2024.05.28 ~ 2024.05.30**  
+- 객체 인식 및 모션 인식 기반 드론 시연 프로젝트  
+- 직업체험페스티벌 부스 운영  
+- 기관: 인재육성재단  
+- 결과물:
+  - [프로젝트 PDF](./assets/pdf/드론%20모션인식%20설명.pdf)
 
-```bash
-git add .
-git commit -m "update portfolio"
-git push
+---
+
+## 🏫 Activities
+
+### SW 교육 기부 활동
+**2024.05.18 ~ 2024.06.08**  
+- 초·중학생 대상 소프트웨어 교육 기부 활동  
+- 기관: 코드클럽 한국위원회  
+- 결과물:
+  - [코드스쿨 PDF](./assets/pdf/코드스쿨.pdf)
+
+---
+
+### 전공·창의융합 동아리 활동
+- **잡스터디(전공직무동아리)**  
+  - 기간: 2023.09 ~ 2024.12  
+  - 기관: 대림대학교 AI시스템학과  
+
+- **ROS 창의융합 전공동아리**  
+  - 기간: 2023.09 ~ 2024.12  
+  - 기관: 대림대학교 AI시스템학과  
+
+---
+
+### 파이썬 백엔드 개발 실무 체험
+**2023.10.13 ~ 2023.12.01**  
+- 기획부터 개발까지 파이썬 백엔드 개발 실무 체험  
+- 기관: 코멘토 직무부트캠프  
+- 결과물:
+  - [수료증](./assets/img/comento.PNG)
+
+---
+
+### 스마트팜 제작 실습
+**2023.05.17**  
+- AI 기반 환경제어 시스템 실습  
+- DIY 스마트팜 제작 프로젝트  
+- 기관: Farm 8 아카데미  
+
+---
+
+### 비교과 통합 역량 인증 프로그램
+**2023.03 ~ 2025.03**  
+- BeACE 비교과 통합 역량 인증 프로그램 109점 이수  
+- 기관: 대림대학교  
+
+
+
+
+
+
+
