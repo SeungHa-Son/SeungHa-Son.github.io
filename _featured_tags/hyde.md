@@ -42,22 +42,21 @@ permalink: /
   }
 
   /* =====================
-     SKILLS (Clean Palette)
+     SKILLS (Grouped Colors)
   ===================== */
   :root{
-    --skills-outer:#f6e27d;
-    --skills-inner:#fff3c4;
-
-    --text:#1f2937;
+    --outer:#f6e27d;
+    --inner:#fff3c4;
     --border:rgba(17,24,39,.12);
     --shadow:0 12px 26px rgba(0,0,0,.12);
+    --text:#1f2937;
 
-    --chip-bg:#eef2ff;            /* 연한 인디고 */
-    --chip-text:#1f2937;
-    --chip-border:rgba(79,70,229,.18);
+    /* 색상 그룹 */
+    --chip-tech-bg:#e0e7ff;      /* AI + Embedded */
+    --chip-tech-text:#1e3a8a;
 
-    --chip-accent-bg:#4f46e5;     /* 핵심 강조 */
-    --chip-accent-text:#ffffff;
+    --chip-lang-bg:#dcfce7;      /* Language + System */
+    --chip-lang-text:#065f46;
 
     --icon-bg:#fff1b8;
   }
@@ -67,22 +66,22 @@ permalink: /
     margin:20px auto;
     padding:20px;
     border-radius:18px;
-    background:var(--skills-outer);
+    background:var(--outer);
     box-shadow:var(--shadow);
   }
+
   .skill-card{
     border-radius:16px;
-    background:var(--skills-inner);
+    background:var(--inner);
     padding:18px;
     border:1px solid var(--border);
   }
 
-  /* ⭐ grid로 고정 → Embedded 내려가는 문제 해결 */
   .skill-row{
     display:grid;
     grid-template-columns:170px 1fr;
-    gap:14px;
-    padding:14px 0;
+    gap:16px;
+    padding:16px 0;
     align-items:start;
   }
 
@@ -115,28 +114,28 @@ permalink: /
 
   .skill-tags{
     display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    align-items:center;
-    min-width:0;
+    flex-direction:column;   /* ⭐ 한 개당 한 줄 */
+    gap:8px;
   }
 
   .chip{
-    display:inline-block;
     padding:8px 14px;
     border-radius:999px;
     font-weight:700;
     font-size:14px;
-    line-height:1;
-    color:var(--chip-text);
-    background:var(--chip-bg);
-    border:1px solid var(--chip-border);
-    white-space:nowrap;
+    line-height:1.2;
+    width:fit-content;
+    border:1px solid var(--border);
   }
 
-  .chip.accent{
-    background:var(--chip-accent-bg);
-    color:var(--chip-accent-text);
+  /* 그룹별 색상 */
+  .chip.tech{
+    background:var(--chip-tech-bg);
+    color:var(--chip-tech-text);
+  }
+  .chip.lang{
+    background:var(--chip-lang-bg);
+    color:var(--chip-lang-text);
   }
 </style>
 
@@ -182,52 +181,44 @@ permalink: /
   <div class="skill-card">
 
     <div class="skill-row">
-      <div class="skill-label">
-        <span class="skill-icon">🤖</span> AI
-      </div>
+      <div class="skill-label"><span class="skill-icon">🤖</span> AI</div>
       <div class="skill-tags">
-        <span class="chip accent">YOLO</span>
-        <span class="chip">TensorFlow</span>
-        <span class="chip">OpenCV</span>
-        <span class="chip">Hailo-8</span>
+        <span class="chip tech">YOLO</span>
+        <span class="chip tech">TensorFlow</span>
+        <span class="chip tech">OpenCV</span>
+        <span class="chip tech">Hailo-8</span>
       </div>
     </div>
 
     <div class="skill-row">
-      <div class="skill-label">
-        <span class="skill-icon">💻</span> Language
-      </div>
+      <div class="skill-label"><span class="skill-icon">💻</span> Language</div>
       <div class="skill-tags">
-        <span class="chip accent">Python</span>
-        <span class="chip">C</span>
-        <span class="chip">C++</span>
-        <span class="chip">Java</span>
-        <span class="chip">SQL</span>
+        <span class="chip lang">Python</span>
+        <span class="chip lang">C</span>
+        <span class="chip lang">C++</span>
+        <span class="chip lang">Java</span>
+        <span class="chip lang">SQL</span>
       </div>
     </div>
 
     <div class="skill-row">
-      <div class="skill-label">
-        <span class="skill-icon">⚙️</span> Embedded
-      </div>
+      <div class="skill-label"><span class="skill-icon">⚙️</span> Embedded</div>
       <div class="skill-tags">
-        <span class="chip">Arduino</span>
-        <span class="chip">Raspberry Pi</span>
-        <span class="chip accent">Linux</span>
-        <span class="chip">Embedded Sys</span>
-        <span class="chip">Firmware</span>
+        <span class="chip tech">Arduino</span>
+        <span class="chip tech">Raspberry Pi</span>
+        <span class="chip tech">Linux</span>
+        <span class="chip tech">Embedded System</span>
+        <span class="chip tech">Firmware</span>
       </div>
     </div>
 
     <div class="skill-row">
-      <div class="skill-label">
-        <span class="skill-icon">🌐</span> System / IoT
-      </div>
+      <div class="skill-label"><span class="skill-icon">🌐</span> System / IoT</div>
       <div class="skill-tags">
-        <span class="chip">IoT</span>
-        <span class="chip">Network Programming</span>
-        <span class="chip">Database</span>
-        <span class="chip">Cloud Computing</span>
+        <span class="chip lang">IoT</span>
+        <span class="chip lang">Network Programming</span>
+        <span class="chip lang">Database</span>
+        <span class="chip lang">Cloud Computing</span>
       </div>
     </div>
 
