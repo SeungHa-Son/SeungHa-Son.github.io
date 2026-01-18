@@ -42,23 +42,20 @@ permalink: /
   }
 
   /* =====================
-     SKILLS (Grouped Colors)
+     SKILLS (Blue Unified)
   ===================== */
   :root{
     --outer:#f6e27d;
     --inner:#fff3c4;
     --border:rgba(17,24,39,.12);
     --shadow:0 12px 26px rgba(0,0,0,.12);
-    --text:#1f2937;
 
-    /* 색상 그룹 */
-    --chip-tech-bg:#e0e7ff;      /* AI + Embedded */
-    --chip-tech-text:#1e3a8a;
-
-    --chip-lang-bg:#dcfce7;      /* Language + System */
-    --chip-lang-text:#065f46;
+    /* 파란색 통일 */
+    --chip-bg:#2563eb;      /* blue-600 */
+    --chip-text:#ffffff;
 
     --icon-bg:#fff1b8;
+    --text:#1f2937;
   }
 
   .skill-box{
@@ -77,11 +74,12 @@ permalink: /
     border:1px solid var(--border);
   }
 
+  /* ⭐ grid 고정으로 Embedded 내려가는 문제 해결 */
   .skill-row{
     display:grid;
     grid-template-columns:170px 1fr;
     gap:16px;
-    padding:16px 0;
+    padding:14px 0;
     align-items:start;
   }
 
@@ -112,10 +110,13 @@ permalink: /
     border:1px solid var(--border);
   }
 
+  /* ✅ 가로 나열 */
   .skill-tags{
     display:flex;
-    flex-direction:column;   /* ⭐ 한 개당 한 줄 */
-    gap:8px;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+    min-width:0;
   }
 
   .chip{
@@ -123,19 +124,10 @@ permalink: /
     border-radius:999px;
     font-weight:700;
     font-size:14px;
-    line-height:1.2;
-    width:fit-content;
-    border:1px solid var(--border);
-  }
-
-  /* 그룹별 색상 */
-  .chip.tech{
-    background:var(--chip-tech-bg);
-    color:var(--chip-tech-text);
-  }
-  .chip.lang{
-    background:var(--chip-lang-bg);
-    color:var(--chip-lang-text);
+    line-height:1;
+    background:var(--chip-bg);
+    color:var(--chip-text);
+    white-space:nowrap;
   }
 </style>
 
@@ -183,42 +175,42 @@ permalink: /
     <div class="skill-row">
       <div class="skill-label"><span class="skill-icon">🤖</span> AI</div>
       <div class="skill-tags">
-        <span class="chip tech">YOLO</span>
-        <span class="chip tech">TensorFlow</span>
-        <span class="chip tech">OpenCV</span>
-        <span class="chip tech">Hailo-8</span>
+        <span class="chip">YOLO</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">OpenCV</span>
+        <span class="chip">Hailo-8</span>
       </div>
     </div>
 
     <div class="skill-row">
       <div class="skill-label"><span class="skill-icon">💻</span> Language</div>
       <div class="skill-tags">
-        <span class="chip lang">Python</span>
-        <span class="chip lang">C</span>
-        <span class="chip lang">C++</span>
-        <span class="chip lang">Java</span>
-        <span class="chip lang">SQL</span>
+        <span class="chip">Python</span>
+        <span class="chip">C</span>
+        <span class="chip">C++</span>
+        <span class="chip">Java</span>
+        <span class="chip">SQL</span>
       </div>
     </div>
 
     <div class="skill-row">
       <div class="skill-label"><span class="skill-icon">⚙️</span> Embedded</div>
       <div class="skill-tags">
-        <span class="chip tech">Arduino</span>
-        <span class="chip tech">Raspberry Pi</span>
-        <span class="chip tech">Linux</span>
-        <span class="chip tech">Embedded System</span>
-        <span class="chip tech">Firmware</span>
+        <span class="chip">Arduino</span>
+        <span class="chip">Raspberry Pi</span>
+        <span class="chip">Linux</span>
+        <span class="chip">Embedded System</span>
+        <span class="chip">Firmware</span>
       </div>
     </div>
 
     <div class="skill-row">
       <div class="skill-label"><span class="skill-icon">🌐</span> System / IoT</div>
       <div class="skill-tags">
-        <span class="chip lang">IoT</span>
-        <span class="chip lang">Network Programming</span>
-        <span class="chip lang">Database</span>
-        <span class="chip lang">Cloud Computing</span>
+        <span class="chip">IoT</span>
+        <span class="chip">Network Programming</span>
+        <span class="chip">Database</span>
+        <span class="chip">Cloud Computing</span>
       </div>
     </div>
 
