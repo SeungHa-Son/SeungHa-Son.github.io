@@ -1,113 +1,181 @@
+---
+layout: page
+title: 손승하
+permalink: /
+---
+
 <style>
   /* =====================
-     SKILLS (Clean Chip UI)
+     Resume Card
   ===================== */
+  .resume-card{
+    max-width:900px;
+    margin:0 auto 32px;
+    overflow-x:auto;
+  }
+  .resume-table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+  }
+  .resume-table th,
+  .resume-table td{
+    border:1px solid #333;
+    padding:10px;
+    vertical-align:middle;
+    font-size:15px;
+  }
+  .resume-table th{
+    background:#f5f5f5;
+    width:120px;
+    text-align:left;
+  }
+  .resume-photo{
+    width:170px;
+    text-align:center;
+    background:#fff;
+  }
+  .resume-photo img{
+    width:140px;
+    height:auto;
+    border:1px solid #999;
+  }
 
+  /* =====================
+     SKILLS (Clean Palette)
+  ===================== */
   :root{
-    /* 배경 톤(따뜻한 노랑 계열 유지) */
-    --skills-outer: #f6e27d;
-    --skills-inner: #fff3c4;
+    --skills-outer:#f6e27d;
+    --skills-inner:#fff3c4;
 
-    /* 텍스트/테두리/그림자 */
-    --text: #1f2937;
-    --muted: #6b7280;
-    --border: rgba(17, 24, 39, .10);
-    --shadow: 0 12px 26px rgba(0,0,0,.12);
+    --text:#1f2937;
+    --border:rgba(17,24,39,.12);
+    --shadow:0 12px 26px rgba(0,0,0,.12);
 
-    /* 칩 컬러: '한 팔레트'로 통일 (Blue/Indigo/Slate) */
-    --chip-bg: #eef2ff;        /* 아주 연한 인디고 */
-    --chip-text: #1f2937;
-    --chip-border: rgba(79,70,229,.18);
+    --chip-bg:#eef2ff;            /* 연한 인디고 */
+    --chip-text:#1f2937;
+    --chip-border:rgba(79,70,229,.18);
 
-    /* 강조 칩(핵심 기술만) */
-    --chip-accent-bg: #4f46e5; /* 인디고 */
-    --chip-accent-text: #ffffff;
+    --chip-accent-bg:#4f46e5;     /* 핵심 강조 */
+    --chip-accent-text:#ffffff;
 
-    /* 아이콘 배경 */
-    --icon-bg: #fff1b8;
+    --icon-bg:#fff1b8;
   }
 
   .skill-box{
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 18px;
-    background: var(--skills-outer);
-    box-shadow: var(--shadow);
+    max-width:900px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:18px;
+    background:var(--skills-outer);
+    box-shadow:var(--shadow);
   }
-
   .skill-card{
-    border-radius: 16px;
-    background: var(--skills-inner);
-    padding: 18px;
-    border: 1px solid var(--border);
+    border-radius:16px;
+    background:var(--skills-inner);
+    padding:18px;
+    border:1px solid var(--border);
   }
 
-  /* ✅த 핵심: grid로 고정 배치해서 Embedded가 아래로 안 내려가게 */
+  /* ⭐ grid로 고정 → Embedded 내려가는 문제 해결 */
   .skill-row{
-    display: grid;
-    grid-template-columns: 170px 1fr; /* 왼쪽 라벨 고정, 오른쪽 태그 유연 */
-    gap: 14px;
-    padding: 14px 0;
-    align-items: start;
+    display:grid;
+    grid-template-columns:170px 1fr;
+    gap:14px;
+    padding:14px 0;
+    align-items:start;
   }
 
-  @media (max-width: 720px){
+  @media (max-width:720px){
     .skill-row{
-      grid-template-columns: 1fr; /* 모바일에서는 자연스럽게 세로 */
+      grid-template-columns:1fr;
     }
   }
 
   .skill-label{
     display:flex;
-    gap: 10px;
+    gap:10px;
     align-items:center;
-    font-weight: 800;
-    font-size: 18px;
-    color: var(--text);
-    white-space: nowrap;
+    font-weight:800;
+    font-size:18px;
+    color:var(--text);
+    white-space:nowrap;
   }
 
   .skill-icon{
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
+    width:34px;
+    height:34px;
+    border-radius:10px;
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    background: var(--icon-bg);
-    border: 1px solid var(--border);
+    background:var(--icon-bg);
+    border:1px solid var(--border);
   }
 
   .skill-tags{
     display:flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    min-width: 0; /* 중요: 긴 텍스트에서도 레이아웃 안정 */
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+    min-width:0;
   }
 
   .chip{
     display:inline-block;
-    padding: 8px 14px;
-    border-radius: 999px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1;
-    color: var(--chip-text);
-    background: var(--chip-bg);
-    border: 1px solid var(--chip-border);
-    white-space: nowrap;
+    padding:8px 14px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:14px;
+    line-height:1;
+    color:var(--chip-text);
+    background:var(--chip-bg);
+    border:1px solid var(--chip-border);
+    white-space:nowrap;
   }
 
-  /* 핵심 기술만 강조 */
   .chip.accent{
-    background: var(--chip-accent-bg);
-    color: var(--chip-accent-text);
-    border-color: rgba(255,255,255,.25);
+    background:var(--chip-accent-bg);
+    color:var(--chip-accent-text);
   }
 </style>
 
+<!-- =====================
+     Resume
+===================== -->
+<div class="resume-card">
+  <table class="resume-table">
+    <tr>
+      <td class="resume-photo" rowspan="4">
+        <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
+      </td>
+      <th>이름</th>
+      <td>손승하</td>
+      <th>영문명</th>
+      <td>Son Seung Ha</td>
+    </tr>
+    <tr>
+      <th>지원분야</th>
+      <td>마케터</td>
+      <th>생년월일</th>
+      <td>2002년</td>
+    </tr>
+    <tr>
+      <th>휴대폰</th>
+      <td>010-5535-1932</td>
+      <th>성별</th>
+      <td>남</td>
+    </tr>
+    <tr>
+      <th>E-mail</th>
+      <td colspan="3">ssha0730@naver.com</td>
+    </tr>
+  </table>
+</div>
+
+<!-- =====================
+     SKILLS
+===================== -->
 <h2>🔗 SKILLS</h2>
 
 <div class="skill-box">
@@ -146,7 +214,7 @@
         <span class="chip">Arduino</span>
         <span class="chip">Raspberry Pi</span>
         <span class="chip accent">Linux</span>
-        <span class="chip">Embedded System</span>
+        <span class="chip">Embedded Sys</span>
         <span class="chip">Firmware</span>
       </div>
     </div>
