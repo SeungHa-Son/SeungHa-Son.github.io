@@ -1,146 +1,113 @@
----
-layout: page
-title: 손승하
-permalink: /
----
-
 <style>
   /* =====================
-     Resume Card
+     SKILLS (Clean Chip UI)
   ===================== */
-  .resume-card{
-    max-width:900px;
-    margin:0 auto 30px;
-    overflow-x:auto;
-  }
-  .resume-table{
-    width:100%;
-    border-collapse:collapse;
-    table-layout:fixed;
-  }
-  .resume-table th,
-  .resume-table td{
-    border:1px solid #333;
-    padding:10px;
-    vertical-align:middle;
-    font-size:15px;
-  }
-  .resume-table th{
-    background:#f5f5f5;
-    width:120px;
-    text-align:left;
-  }
-  .resume-photo{
-    width:170px;
-    text-align:center;
-    background:#fff;
-  }
-  .resume-photo img{
-    width:140px;
-    height:auto;
-    border:1px solid #999;
+
+  :root{
+    /* 배경 톤(따뜻한 노랑 계열 유지) */
+    --skills-outer: #f6e27d;
+    --skills-inner: #fff3c4;
+
+    /* 텍스트/테두리/그림자 */
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: rgba(17, 24, 39, .10);
+    --shadow: 0 12px 26px rgba(0,0,0,.12);
+
+    /* 칩 컬러: '한 팔레트'로 통일 (Blue/Indigo/Slate) */
+    --chip-bg: #eef2ff;        /* 아주 연한 인디고 */
+    --chip-text: #1f2937;
+    --chip-border: rgba(79,70,229,.18);
+
+    /* 강조 칩(핵심 기술만) */
+    --chip-accent-bg: #4f46e5; /* 인디고 */
+    --chip-accent-text: #ffffff;
+
+    /* 아이콘 배경 */
+    --icon-bg: #fff1b8;
   }
 
-  /* =====================
-     SKILLS (Chip UI)
-  ===================== */
   .skill-box{
-    max-width:900px;
-    margin:20px auto;
-    padding:20px;
-    border-radius:18px;
-    background:#f7e27a;
-    box-shadow:0 10px 22px rgba(0,0,0,.12);
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 18px;
+    background: var(--skills-outer);
+    box-shadow: var(--shadow);
   }
+
   .skill-card{
-    border-radius:16px;
-    background:#fff3c4;
-    padding:18px;
+    border-radius: 16px;
+    background: var(--skills-inner);
+    padding: 18px;
+    border: 1px solid var(--border);
   }
+
+  /* ✅த 핵심: grid로 고정 배치해서 Embedded가 아래로 안 내려가게 */
   .skill-row{
-    display:flex;
-    gap:14px;
-    padding:12px 0;
-    align-items:flex-start;
-    flex-wrap:wrap;
+    display: grid;
+    grid-template-columns: 170px 1fr; /* 왼쪽 라벨 고정, 오른쪽 태그 유연 */
+    gap: 14px;
+    padding: 14px 0;
+    align-items: start;
   }
+
+  @media (max-width: 720px){
+    .skill-row{
+      grid-template-columns: 1fr; /* 모바일에서는 자연스럽게 세로 */
+    }
+  }
+
   .skill-label{
-    min-width:140px;
     display:flex;
-    gap:10px;
+    gap: 10px;
     align-items:center;
-    font-weight:800;
-    font-size:18px;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--text);
+    white-space: nowrap;
   }
+
   .skill-icon{
-    width:34px;
-    height:34px;
-    border-radius:8px;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    background:#ffe08a;
-    border:2px solid rgba(0,0,0,.08);
+    background: var(--icon-bg);
+    border: 1px solid var(--border);
   }
+
   .skill-tags{
     display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    min-width: 0; /* 중요: 긴 텍스트에서도 레이아웃 안정 */
   }
+
   .chip{
     display:inline-block;
-    padding:7px 14px;
-    border-radius:999px;
-    font-weight:700;
-    font-size:14px;
-    line-height:1;
-    color:#111;
-    background:#e5e7eb;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    color: var(--chip-text);
+    background: var(--chip-bg);
+    border: 1px solid var(--chip-border);
+    white-space: nowrap;
   }
-  .blue{background:#3b82f6;color:#fff;}
-  .yellow{background:#f59e0b;color:#111;}
-  .green{background:#22c55e;color:#fff;}
-  .red{background:#ef4444;color:#fff;}
-  .purple{background:#a855f7;color:#fff;}
-  .gray{background:#111827;color:#fff;}
+
+  /* 핵심 기술만 강조 */
+  .chip.accent{
+    background: var(--chip-accent-bg);
+    color: var(--chip-accent-text);
+    border-color: rgba(255,255,255,.25);
+  }
 </style>
 
-<!-- =====================
-     Resume
-===================== -->
-<div class="resume-card">
-  <table class="resume-table">
-    <tr>
-      <td class="resume-photo" rowspan="4">
-        <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
-      </td>
-      <th>이름</th>
-      <td>손승하</td>
-      <th>영문명</th>
-      <td>Son Seung Ha</td>
-    </tr>
-    <tr>
-      <th>지원분야</th>
-      <td>마케터</td>
-      <th>생년월일</th>
-      <td>2002년</td>
-    </tr>
-    <tr>
-      <th>휴대폰</th>
-      <td>010-5535-1932</td>
-      <th>성별</th>
-      <td>남</td>
-    </tr>
-    <tr>
-      <th>E-mail</th>
-      <td colspan="3">ssha0730@naver.com</td>
-    </tr>
-  </table>
-</div>
-
-<!-- =====================
-     SKILLS
-===================== -->
 <h2>🔗 SKILLS</h2>
 
 <div class="skill-box">
@@ -151,10 +118,10 @@ permalink: /
         <span class="skill-icon">🤖</span> AI
       </div>
       <div class="skill-tags">
-        <span class="chip blue">YOLO</span>
-        <span class="chip yellow">TensorFlow</span>
-        <span class="chip purple">OpenCV</span>
-        <span class="chip gray">Hailo-8</span>
+        <span class="chip accent">YOLO</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">OpenCV</span>
+        <span class="chip">Hailo-8</span>
       </div>
     </div>
 
@@ -163,11 +130,11 @@ permalink: /
         <span class="skill-icon">💻</span> Language
       </div>
       <div class="skill-tags">
-        <span class="chip blue">Python</span>
-        <span class="chip gray">C</span>
-        <span class="chip gray">C++</span>
-        <span class="chip red">Java</span>
-        <span class="chip green">SQL</span>
+        <span class="chip accent">Python</span>
+        <span class="chip">C</span>
+        <span class="chip">C++</span>
+        <span class="chip">Java</span>
+        <span class="chip">SQL</span>
       </div>
     </div>
 
@@ -176,11 +143,11 @@ permalink: /
         <span class="skill-icon">⚙️</span> Embedded
       </div>
       <div class="skill-tags">
-        <span class="chip yellow">Arduino</span>
-        <span class="chip red">Raspberry Pi</span>
-        <span class="chip gray">Linux</span>
-        <span class="chip purple">Embedded System</span>
-        <span class="chip green">Firmware</span>
+        <span class="chip">Arduino</span>
+        <span class="chip">Raspberry Pi</span>
+        <span class="chip accent">Linux</span>
+        <span class="chip">Embedded System</span>
+        <span class="chip">Firmware</span>
       </div>
     </div>
 
@@ -189,10 +156,10 @@ permalink: /
         <span class="skill-icon">🌐</span> System / IoT
       </div>
       <div class="skill-tags">
-        <span class="chip blue">IoT</span>
-        <span class="chip purple">Network Programming</span>
-        <span class="chip gray">Database</span>
-        <span class="chip green">Cloud Computing</span>
+        <span class="chip">IoT</span>
+        <span class="chip">Network Programming</span>
+        <span class="chip">Database</span>
+        <span class="chip">Cloud Computing</span>
       </div>
     </div>
 
