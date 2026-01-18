@@ -1,6 +1,21 @@
-/* 데스크톱에서 본문을 오른쪽으로 살짝 이동 */
+/* 데스크톱에서 본문(오른쪽 영역)만 오른쪽으로 이동 */
 @media screen and (min-width: 900px){
-  #_main{
-    margin-left: -40px;   /* 24px → 40px 등 원하는 만큼 조절 */
+  main,
+  #_main,
+  #_content,
+  .content,
+  .content-wrapper,
+  .page,
+  .page__content {
+    position: relative !important;
+    left: 40px !important;   /* ← 원하는 만큼 조절 */
   }
+}
+
+/* 햄버거 메뉴 버튼은 원위치(왼쪽 상단)로 고정 */
+#_menu{
+  position: fixed !important;
+  left: 10px !important;    /* ← 기본 위치 */
+  top: 10px !important;
+  z-index: 999999 !important;
 }
