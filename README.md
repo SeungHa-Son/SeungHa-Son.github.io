@@ -73,8 +73,7 @@ an expected graduate of the **Department of AI Systems at Daelim University**.
 - 딥러닝 기반 음성 분석 및 합성 기술을 활용한 AI 커버곡 생성 프로젝트  
 - 대림테크페어 전시  
 - 기관: 대림대학교  
-- 결과물:
-  - [영상](https://www.youtube.com/watch?v=zuLukIJ4ogs&t=2s)
+
 
 ---
 
