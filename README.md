@@ -57,9 +57,7 @@ an expected graduate of the **Department of AI Systems at Daelim University**.
 - 시각장애인의 안전한 보행을 돕기 위한 보조 장치 개발  
 - 대림테크페어 전시 프로젝트  
 - 기관: 대림대학교  
-- 결과물:
-  - [영상](https://www.youtube.com/watch?v=o0KDbAmzD5c&t=4s)  
-  - [PDF](./assets/pdf/for%20blind.pdf)
+
 
 ---
 
