@@ -42,7 +42,7 @@ permalink: /
   }
 
   /* =====================
-     SKILLS (Yellow bg + Black chips)
+     SKILLS (White Chips)
   ===================== */
   :root{
     --outer:#f6e27d;          /* 큰 노란 배경 */
@@ -50,9 +50,10 @@ permalink: /
     --border:rgba(17,24,39,.12);
     --shadow:0 12px 26px rgba(0,0,0,.12);
 
-    /* 칩: 검정 배경 + 흰 글씨 */
-    --chip-bg:#000000;
-    --chip-text:#ffffff;
+    /* 칩: 흰 배경 + 검정 글씨 */
+    --chip-bg:#ffffff;
+    --chip-text:#111111;
+    --chip-border:#d1d5db;
 
     --icon-bg:#fff1b8;
     --text:#1f2937;
@@ -119,16 +120,23 @@ permalink: /
     min-width:0;
   }
 
-  /* ✅ 핵심 변경 부분 */
+  /* ⭐ 핵심 변경: 흰 배경 + 검정 글씨 */
   .chip{
     padding:8px 14px;
     border-radius:999px;
     font-weight:700;
     font-size:14px;
     line-height:1;
-    background:var(--chip-bg);   /* 검정 */
-    color:var(--chip-text);      /* 흰색 */
+    background:var(--chip-bg);
+    color:var(--chip-text);
+    border:1px solid var(--chip-border);
     white-space:nowrap;
+  }
+
+  /* 살짝 고급스러운 hover */
+  .chip:hover{
+    background:#f9fafb;
+    border-color:#9ca3af;
   }
 </style>
 
