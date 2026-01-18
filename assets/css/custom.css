@@ -1,7 +1,7 @@
 /* Hydejack 햄버거 메뉴 버튼(#_menu) 위치 조정 */
 #_menu {
   position: relative !important;
-  left: -4px !important;   /* ← 왼쪽으로 (원하면 -12px, -16px로 더) */
+  left: -8px !important;   /* ← 왼쪽으로 (원하면 -12px, -16px로 더) */
   top: 0px !important;
   z-index: 9999 !important;
 }
@@ -9,6 +9,6 @@
 /* 데스크톱에서 본문을 오른쪽으로 살짝 이동 */
 @media screen and (min-width: 900px){
   #_main{
-    margin-left: 24px;   /* 24px → 40px 등 원하는 만큼 조절 */
+    margin-left: 40px;   /* 24px → 40px 등 원하는 만큼 조절 */
   }
 }
