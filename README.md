@@ -83,8 +83,7 @@ an expected graduate of the **Department of AI Systems at Daelim University**.
 - 객체 인식 및 모션 인식 기반 드론 시연 프로젝트  
 - 직업체험페스티벌 부스 운영  
 - 기관: 인재육성재단  
-- 결과물:
-  - [프로젝트 PDF](./assets/pdf/드론%20모션인식%20설명.pdf)
+
 
 ---
 
@@ -94,8 +93,7 @@ an expected graduate of the **Department of AI Systems at Daelim University**.
 **2024.05.18 ~ 2024.06.08**  
 - 초·중학생 대상 소프트웨어 교육 기부 활동  
 - 기관: 코드클럽 한국위원회  
-- 결과물:
-  - [코드스쿨 PDF](./assets/pdf/코드스쿨.pdf)
+
 
 ---
 
@@ -114,8 +112,7 @@ an expected graduate of the **Department of AI Systems at Daelim University**.
 **2023.10.13 ~ 2023.12.01**  
 - 기획부터 개발까지 파이썬 백엔드 개발 실무 체험  
 - 기관: 코멘토 직무부트캠프  
-- 결과물:
-  - [수료증](./assets/img/comento.PNG)
+
 
 ---
 
