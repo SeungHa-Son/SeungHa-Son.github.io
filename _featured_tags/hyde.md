@@ -5,19 +5,27 @@ permalink: /
 ---
 
 <style>
-  .resume-card{max-width:900px; overflow-x:auto;}
+  .resume-card{max-width:900px; margin:0 auto; overflow-x:auto;}
   .resume-table{width:100%; border-collapse:collapse; table-layout:fixed;}
-  .resume-table th,.resume-table td{border:1px solid #333; padding:10px; vertical-align:middle; font-size:15px;}
+  .resume-table th,.resume-table td{
+    border:1px solid #333;
+    padding:10px;
+    vertical-align:middle;
+    font-size:15px;
+  }
   .resume-table th{background:#f5f5f5; width:120px; text-align:left;}
   .resume-photo{width:170px; text-align:center; background:#fff;}
   .resume-photo img{width:140px; height:auto; border:1px solid #999;}
+
+  /* SKILLS table */
+  .skills-table{margin-top:20px;}
 </style>
 
 <div class="resume-card">
   <table class="resume-table">
     <tr>
       <td class="resume-photo" rowspan="4">
-        <img src="/assets/img/son-face.jpg" alt="profile">
+        <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
       </td>
       <th>이름</th>
       <td>손승하</td>
@@ -42,16 +50,30 @@ permalink: /
     </tr>
   </table>
 </div>
-## 🔗 SKILLS
 
-### 🤖 AI
-`YOLO` `TensorFlow` `OpenCV` `Hailo-8`
+<h2>🔗 SKILLS</h2>
 
-### 💻 Language
-`Python` `C` `C++` `Java` `SQL`
-
-### ⚙️ Embedded
-`Arduino` `Raspberry Pi` `Linux` `Embedded System` `Firmware`
-
-### 🌐 System / IoT
-`IoT` `Network Programming` `Database` `Cloud Computing`
+<div class="resume-card skills-table">
+  <table class="resume-table">
+    <tr>
+      <th>Category</th>
+      <th>Tech Stack</th>
+    </tr>
+    <tr>
+      <td>🤖 AI</td>
+      <td>YOLO, TensorFlow, OpenCV, Hailo-8</td>
+    </tr>
+    <tr>
+      <td>💻 Language</td>
+      <td>Python, C, C++, Java, SQL</td>
+    </tr>
+    <tr>
+      <td>⚙️ Embedded</td>
+      <td>Arduino, Raspberry Pi, Linux, Embedded System, Firmware</td>
+    </tr>
+    <tr>
+      <td>🌐 System / IoT</td>
+      <td>IoT, Network Programming, Database, Cloud Computing</td>
+    </tr>
+  </table>
+</div>
