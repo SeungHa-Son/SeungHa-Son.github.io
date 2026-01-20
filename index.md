@@ -6,6 +6,61 @@ permalink: /
 
 <style>
   /* =====================
+     HERO (Top Section)
+  ===================== */
+  .simple-hero{
+    max-width: 1000px;
+    margin: 20px auto 40px;
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+
+    /* ✅ 배경 이미지: /assets/img/hero.jpg 를 넣거나 파일명 바꾸기 */
+    background-image:
+      linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+      url('/assets/img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0,0,0,.18);
+  }
+
+  .simple-hero h1{
+    font-size: 44px;
+    font-weight: 900;
+    margin: 0 0 10px;
+    letter-spacing: -0.5px;
+  }
+
+  .simple-hero h2{
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 18px;
+    opacity: .95;
+  }
+
+  .simple-hero p{
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    opacity: .92;
+  }
+
+  .hero-hr{
+    width: 44px;
+    height: 3px;
+    background: #ff6a3d;
+    margin: 16px auto 18px;
+    border-radius: 999px;
+  }
+
+  @media (max-width: 720px){
+    .simple-hero{ padding: 64px 16px; }
+    .simple-hero h1{ font-size: 32px; }
+    .simple-hero h2{ font-size: 20px; }
+  }
+
+  /* =====================
      Resume Card
   ===================== */
   .resume-card{
@@ -120,7 +175,6 @@ permalink: /
     min-width:0;
   }
 
-  /* ⭐ 핵심 변경: 흰 배경 + 검정 글씨 */
   .chip{
     padding:8px 14px;
     border-radius:999px;
@@ -133,12 +187,24 @@ permalink: /
     white-space:nowrap;
   }
 
-  /* 살짝 고급스러운 hover */
   .chip:hover{
     background:#f9fafb;
     border-color:#9ca3af;
   }
 </style>
+
+<!-- =====================
+     HERO
+===================== -->
+<section class="simple-hero">
+  <h1>- 손승하 -</h1>
+  <h2>AI시스템 전공 포트폴리오</h2>
+  <div class="hero-hr"></div>
+  <p>
+    안녕하세요.<br>
+    기술을 이해하는 마케터 손승하입니다.
+  </p>
+</section>
 
 <!-- =====================
      Resume
