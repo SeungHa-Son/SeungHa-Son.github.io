@@ -18,8 +18,8 @@ permalink: /
     /* ✅ computer.jpg + 살짝 투명한 어두운 오버레이 */
     background-image:
       linear-gradient(
-        rgba(0,0,0,0.45),
-        rgba(0,0,0,0.45)
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
       ),
       url('/assets/img/computer.jpg');
 
