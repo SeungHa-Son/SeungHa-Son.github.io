@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 손승하
+title: Portfolio
 permalink: /
 ---
 
@@ -15,14 +15,9 @@ permalink: /
     text-align: center;
     color: #ffffff;
 
-    /* ✅ computer.jpg + 살짝 투명한 어두운 오버레이 */
     background-image:
-      linear-gradient(
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
-      ),
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
       url('/assets/img/computer.jpg');
-
     background-size: cover;
     background-position: center;
     border-radius: 18px;
@@ -62,22 +57,86 @@ permalink: /
   }
 
   /* =====================
+     ABOUT ME
+  ===================== */
+  .about-wrap{
+    max-width:1000px;
+    margin:40px auto 20px;
+    padding:0 20px;
+  }
+
+  .about-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    font-size:32px;
+    font-weight:900;
+    margin-bottom:10px;
+  }
+
+  .about-hr{
+    width:120px;
+    height:3px;
+    background:#111;
+    margin:0 auto 30px;
+    border-radius:999px;
+  }
+
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:26px 70px;
+  }
+
+  @media (max-width:820px){
+    .about-grid{ grid-template-columns:1fr; }
+  }
+
+  .about-item{
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+  }
+
+  .about-icon{
+    width:44px;
+    height:44px;
+    border-radius:12px;
+    background:#f3f4f6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+  }
+
+  .about-label{
+    font-weight:900;
+    margin-bottom:6px;
+  }
+
+  .about-value{
+    color:#4b5563;
+    font-size:15px;
+    line-height:1.5;
+  }
+
+  /* =====================
      SKILLS
   ===================== */
   :root{
-  --outer:#f3f4f6;   /* 연한 그레이 */
-  --inner:#ffffff;   /* 순백 카드 */
-  --border:rgba(17,24,39,.12);
-  --shadow:0 12px 26px rgba(0,0,0,.12);
+    --outer:#f3f4f6;
+    --inner:#ffffff;
+    --border:rgba(17,24,39,.12);
+    --shadow:0 12px 26px rgba(0,0,0,.12);
 
-  --chip-bg:#ffffff;
-  --chip-text:#111111;
-  --chip-border:#d1d5db;
+    --chip-bg:#ffffff;
+    --chip-text:#111111;
+    --chip-border:#d1d5db;
 
-  --icon-bg:#e5e7eb;
-  --text:#1f2937;
-}
-
+    --icon-bg:#e5e7eb;
+    --text:#1f2937;
+  }
 
   .skill-box{
     max-width:900px;
@@ -100,13 +159,10 @@ permalink: /
     grid-template-columns:170px 1fr;
     gap:16px;
     padding:14px 0;
-    align-items:start;
   }
 
   @media (max-width:720px){
-    .skill-row{
-      grid-template-columns:1fr;
-    }
+    .skill-row{ grid-template-columns:1fr; }
   }
 
   .skill-label{
@@ -115,26 +171,22 @@ permalink: /
     align-items:center;
     font-weight:800;
     font-size:18px;
-    color:var(--text);
-    white-space:nowrap;
   }
 
   .skill-icon{
     width:34px;
     height:34px;
     border-radius:10px;
-    display:inline-flex;
+    background:var(--icon-bg);
+    display:flex;
     align-items:center;
     justify-content:center;
-    background:var(--icon-bg);
-    border:1px solid var(--border);
   }
 
   .skill-tags{
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-    align-items:center;
   }
 
   .chip{
@@ -142,15 +194,8 @@ permalink: /
     border-radius:999px;
     font-weight:700;
     font-size:14px;
-    background:var(--chip-bg);
-    color:var(--chip-text);
+    background:#fff;
     border:1px solid var(--chip-border);
-    white-space:nowrap;
-  }
-
-  .chip:hover{
-    background:#f9fafb;
-    border-color:#9ca3af;
   }
 </style>
 
@@ -165,6 +210,64 @@ permalink: /
     안녕하세요.<br>
     기술을 이해하는 마케터 손승하입니다.
   </p>
+</section>
+
+<!-- =====================
+     ABOUT ME
+===================== -->
+<section class="about-wrap">
+  <div class="about-title">🔗 ABOUT ME</div>
+  <div class="about-hr"></div>
+
+  <div class="about-grid">
+    <div class="about-item">
+      <div class="about-icon">👤</div>
+      <div>
+        <div class="about-label">이름</div>
+        <div class="about-value">손승하</div>
+      </div>
+    </div>
+
+    <div class="about-item">
+      <div class="about-icon">📅</div>
+      <div>
+        <div class="about-label">생년</div>
+        <div class="about-value">2002년</div>
+      </div>
+    </div>
+
+    <div class="about-item">
+      <div class="about-icon">📍</div>
+      <div>
+        <div class="about-label">위치</div>
+        <div class="about-value">경기도 수원시</div>
+      </div>
+    </div>
+
+    <div class="about-item">
+      <div class="about-icon">📞</div>
+      <div>
+        <div class="about-label">연락처</div>
+        <div class="about-value">010-5535-1932</div>
+      </div>
+    </div>
+
+    <div class="about-item">
+      <div class="about-icon">✉️</div>
+      <div>
+        <div class="about-label">이메일</div>
+        <div class="about-value">ssha0730@naver.com</div>
+      </div>
+    </div>
+
+    <div class="about-item">
+      <div class="about-icon">🎓</div>
+      <div>
+        <div class="about-label">학력</div>
+        <div class="about-value">대림대학교 AI시스템학과</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- =====================
