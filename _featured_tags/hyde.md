@@ -15,9 +15,14 @@ permalink: /
     text-align: center;
     color: #ffffff;
 
+    /* ✅ computer.jpg + 살짝 투명한 어두운 오버레이 */
     background-image:
-      linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-      url('/assets/img/hero.jpg');
+      linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+      ),
+      url('/assets/img/computer.jpg');
+
     background-size: cover;
     background-position: center;
     border-radius: 18px;
