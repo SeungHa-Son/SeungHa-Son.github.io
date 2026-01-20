@@ -65,18 +65,19 @@ permalink: /
      SKILLS
   ===================== */
   :root{
-    --outer:#f6e27d;
-    --inner:#fff3c4;
-    --border:rgba(17,24,39,.12);
-    --shadow:0 12px 26px rgba(0,0,0,.12);
+  --outer:#f3f4f6;   /* 연한 그레이 */
+  --inner:#ffffff;   /* 순백 카드 */
+  --border:rgba(17,24,39,.12);
+  --shadow:0 12px 26px rgba(0,0,0,.12);
 
-    --chip-bg:#ffffff;
-    --chip-text:#111111;
-    --chip-border:#d1d5db;
+  --chip-bg:#ffffff;
+  --chip-text:#111111;
+  --chip-border:#d1d5db;
 
-    --icon-bg:#fff1b8;
-    --text:#1f2937;
-  }
+  --icon-bg:#e5e7eb;
+  --text:#1f2937;
+}
+
 
   .skill-box{
     max-width:900px;
