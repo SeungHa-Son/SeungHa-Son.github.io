@@ -1,5 +1,6 @@
 ---
 layout: page
+title: 손승하
 permalink: /
 ---
 
