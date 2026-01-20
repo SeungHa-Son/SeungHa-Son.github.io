@@ -3,7 +3,8 @@ layout: page
 title: Portfolio
 permalink: /
 ---
-
+  
+  
 <style>
   /* =====================
      HERO
@@ -14,7 +15,6 @@ permalink: /
     padding: 80px 20px;
     text-align: center;
     color: #ffffff;
-
     background-image:
       linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
       url('/assets/img/computer.jpg');
@@ -55,8 +55,6 @@ permalink: /
     .simple-hero h1{ font-size: 32px; }
     .simple-hero h2{ font-size: 20px; }
   }
-
----
 
   /* =====================
      ABOUT ME
@@ -110,6 +108,7 @@ permalink: /
     align-items:center;
     justify-content:center;
     font-size:22px;
+    border:1px solid rgba(17,24,39,.12);
   }
 
   .about-label{
@@ -123,8 +122,6 @@ permalink: /
     line-height:1.5;
   }
 
----
-
   /* =====================
      SKILLS
   ===================== */
@@ -133,11 +130,9 @@ permalink: /
     --inner:#ffffff;
     --border:rgba(17,24,39,.12);
     --shadow:0 12px 26px rgba(0,0,0,.12);
-
     --chip-bg:#ffffff;
     --chip-text:#111111;
     --chip-border:#d1d5db;
-
     --icon-bg:#e5e7eb;
     --text:#1f2937;
   }
@@ -149,6 +144,7 @@ permalink: /
     border-radius:18px;
     background:var(--outer);
     box-shadow:var(--shadow);
+    border:1px solid var(--border);
   }
 
   .skill-card{
@@ -175,6 +171,8 @@ permalink: /
     align-items:center;
     font-weight:800;
     font-size:18px;
+    color:var(--text);
+    white-space:nowrap;
   }
 
   .skill-icon{
@@ -185,6 +183,7 @@ permalink: /
     display:flex;
     align-items:center;
     justify-content:center;
+    border:1px solid var(--border);
   }
 
   .skill-tags{
@@ -198,8 +197,15 @@ permalink: /
     border-radius:999px;
     font-weight:700;
     font-size:14px;
-    background:#fff;
+    background:var(--chip-bg);
+    color:var(--chip-text);
     border:1px solid var(--chip-border);
+    white-space:nowrap;
+  }
+
+  .chip:hover{
+    background:#f9fafb;
+    border-color:#9ca3af;
   }
 </style>
 
