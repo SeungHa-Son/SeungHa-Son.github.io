@@ -56,6 +56,8 @@ permalink: /
     .simple-hero h2{ font-size: 20px; }
   }
 
+---
+
   /* =====================
      ABOUT ME
   ===================== */
@@ -120,6 +122,8 @@ permalink: /
     font-size:15px;
     line-height:1.5;
   }
+
+---
 
   /* =====================
      SKILLS
