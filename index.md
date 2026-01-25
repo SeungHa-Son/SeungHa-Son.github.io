@@ -57,30 +57,33 @@ permalink: /
 }
 
 /* =====================
+   SECTION TITLE (ABOUT / SKILLS 공통)
+===================== */
+.section-title{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  font-size:28px;        /* ✅ 두 섹션 제목 크기 통일 */
+  font-weight:900;
+  margin:60px 0 10px;
+}
+
+.section-hr{
+  width:90px;            /* ✅ 밑줄 길이도 통일 */
+  height:3px;
+  background:#111;
+  margin:0 auto 30px;
+  border-radius:999px;
+}
+
+/* =====================
    ABOUT ME
 ===================== */
 .about-wrap{
   max-width:1000px;
   margin:60px auto 20px;
   padding:0 20px;
-}
-
-.about-title{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:12px;
-  font-size:32px;
-  font-weight:900;
-  margin-bottom:10px;
-}
-
-.about-hr{
-  width:120px;
-  height:3px;
-  background:#111;
-  margin:0 auto 30px;
-  border-radius:999px;
 }
 
 /* 프로필 사진 */
@@ -160,7 +163,7 @@ permalink: /
 
 .skill-box{
   max-width:900px;
-  margin:60px auto;
+  margin:20px auto 60px;
   padding:20px;
   border-radius:18px;
   background:var(--outer);
@@ -248,8 +251,8 @@ permalink: /
      ABOUT ME
 ===================== -->
 <section class="about-wrap">
-  <div class="about-title">🔗 ABOUT ME</div>
-  <div class="about-hr"></div>
+  <div class="section-title">🔗 ABOUT ME</div>
+  <div class="section-hr"></div>
 
   <div class="about-photo">
     <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
@@ -309,7 +312,8 @@ permalink: /
 <!-- =====================
      SKILLS
 ===================== -->
-<h2 style="text-align:center;margin-top:60px;">🔗 SKILLS</h2>
+<div class="section-title">🔗 SKILLS</div>
+<div class="section-hr"></div>
 
 <div class="skill-box">
   <div class="skill-card">
