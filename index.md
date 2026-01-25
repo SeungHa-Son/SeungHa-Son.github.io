@@ -251,7 +251,7 @@ permalink: /
      ABOUT ME
 ===================== -->
 <section class="about-wrap">
-  <div class="section-title">🔗 ABOUT ME</div>
+  <div class="section-title">ABOUT ME</div>
   <div class="section-hr"></div>
 
   <div class="about-photo">
@@ -312,7 +312,7 @@ permalink: /
 <!-- =====================
      SKILLS
 ===================== -->
-<div class="section-title">🔗 SKILLS</div>
+<div class="section-title">SKILLS</div>
 <div class="section-hr"></div>
 
 <div class="skill-box">
