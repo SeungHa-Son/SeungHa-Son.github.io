@@ -3,210 +3,231 @@ layout: page
 title: Portfolio
 permalink: /
 ---
-  
-  
+
 <style>
-  /* =====================
-     HERO
-  ===================== */
-  .simple-hero{
-    max-width: 1000px;
-    margin: 30px auto 50px;
-    padding: 80px 20px;
-    text-align: center;
-    color: #ffffff;
-    background-image:
-      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-      url('/assets/img/computer.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 18px;
-    box-shadow: 0 18px 40px rgba(0,0,0,.18);
-  }
+/* =====================
+   HERO
+===================== */
+.simple-hero{
+  max-width: 1000px;
+  margin: 30px auto 50px;
+  padding: 80px 20px;
+  text-align: center;
+  color: #ffffff;
 
-  .simple-hero h1{
-    font-size: 44px;
-    font-weight: 900;
-    margin-bottom: 10px;
-  }
+  background-image:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url('/assets/img/computer.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.18);
+}
 
-  .simple-hero h2{
-    font-size: 26px;
-    font-weight: 800;
-    margin-bottom: 18px;
-    opacity: .95;
-  }
+.simple-hero h1{
+  font-size: 44px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
 
-  .simple-hero p{
-    font-size: 16px;
-    line-height: 1.7;
-    opacity: .92;
-  }
+.simple-hero h2{
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  opacity: .95;
+}
 
-  .hero-hr{
-    width: 44px;
-    height: 3px;
-    background: #ff6a3d;
-    margin: 16px auto 18px;
-    border-radius: 999px;
-  }
+.simple-hero p{
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: .92;
+}
 
-  @media (max-width: 720px){
-    .simple-hero h1{ font-size: 32px; }
-    .simple-hero h2{ font-size: 20px; }
-  }
+.hero-hr{
+  width: 44px;
+  height: 3px;
+  background: #ff6a3d;
+  margin: 16px auto 18px;
+  border-radius: 999px;
+}
 
-  /* =====================
-     ABOUT ME
-  ===================== */
-  .about-wrap{
-    max-width:1000px;
-    margin:40px auto 20px;
-    padding:0 20px;
-  }
+@media (max-width: 720px){
+  .simple-hero h1{ font-size: 32px; }
+  .simple-hero h2{ font-size: 20px; }
+}
 
-  .about-title{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:12px;
-    font-size:32px;
-    font-weight:900;
-    margin-bottom:10px;
-  }
+/* =====================
+   ABOUT ME
+===================== */
+.about-wrap{
+  max-width:1000px;
+  margin:60px auto 20px;
+  padding:0 20px;
+}
 
-  .about-hr{
-    width:120px;
-    height:3px;
-    background:#111;
-    margin:0 auto 30px;
-    border-radius:999px;
-  }
+.about-title{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  font-size:32px;
+  font-weight:900;
+  margin-bottom:10px;
+}
 
+.about-hr{
+  width:120px;
+  height:3px;
+  background:#111;
+  margin:0 auto 30px;
+  border-radius:999px;
+}
+
+/* 프로필 사진 */
+.about-photo{
+  display:flex;
+  justify-content:center;
+  margin-bottom:40px;
+}
+
+.about-photo img{
+  width:140px;
+  height:180px;
+  object-fit:cover;
+  border-radius:14px;
+  border:1px solid #e5e7eb;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* 정보 그리드 */
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px 70px;
+}
+
+@media (max-width:820px){
   .about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:26px 70px;
+    grid-template-columns:1fr;
   }
+}
 
-  @media (max-width:820px){
-    .about-grid{ grid-template-columns:1fr; }
-  }
+.about-item{
+  display:flex;
+  gap:16px;
+  align-items:flex-start;
+}
 
-  .about-item{
-    display:flex;
-    gap:16px;
-    align-items:flex-start;
-  }
+.about-icon{
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  background:#f3f4f6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  border:1px solid #e5e7eb;
+}
 
-  .about-icon{
-    width:44px;
-    height:44px;
-    border-radius:12px;
-    background:#f3f4f6;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:22px;
-    border:1px solid rgba(17,24,39,.12);
-  }
+.about-label{
+  font-weight:900;
+  margin-bottom:6px;
+}
 
-  .about-label{
-    font-weight:900;
-    margin-bottom:6px;
-  }
+.about-value{
+  color:#4b5563;
+  font-size:15px;
+  line-height:1.5;
+}
 
-  .about-value{
-    color:#4b5563;
-    font-size:15px;
-    line-height:1.5;
-  }
+/* =====================
+   SKILLS
+===================== */
+:root{
+  --outer:#f3f4f6;
+  --inner:#ffffff;
+  --border:rgba(17,24,39,.12);
+  --shadow:0 12px 26px rgba(0,0,0,.12);
 
-  /* =====================
-     SKILLS
-  ===================== */
-  :root{
-    --outer:#f3f4f6;
-    --inner:#ffffff;
-    --border:rgba(17,24,39,.12);
-    --shadow:0 12px 26px rgba(0,0,0,.12);
-    --chip-bg:#ffffff;
-    --chip-text:#111111;
-    --chip-border:#d1d5db;
-    --icon-bg:#e5e7eb;
-    --text:#1f2937;
-  }
+  --chip-bg:#ffffff;
+  --chip-text:#111111;
+  --chip-border:#d1d5db;
 
-  .skill-box{
-    max-width:900px;
-    margin:20px auto;
-    padding:20px;
-    border-radius:18px;
-    background:var(--outer);
-    box-shadow:var(--shadow);
-    border:1px solid var(--border);
-  }
+  --icon-bg:#e5e7eb;
+  --text:#1f2937;
+}
 
-  .skill-card{
-    border-radius:16px;
-    background:var(--inner);
-    padding:18px;
-    border:1px solid var(--border);
-  }
+.skill-box{
+  max-width:900px;
+  margin:60px auto;
+  padding:20px;
+  border-radius:18px;
+  background:var(--outer);
+  box-shadow:var(--shadow);
+  border:1px solid var(--border);
+}
 
-  .skill-row{
-    display:grid;
-    grid-template-columns:170px 1fr;
-    gap:16px;
-    padding:14px 0;
-  }
+.skill-card{
+  border-radius:16px;
+  background:var(--inner);
+  padding:18px;
+  border:1px solid var(--border);
+}
 
-  @media (max-width:720px){
-    .skill-row{ grid-template-columns:1fr; }
-  }
+.skill-row{
+  display:grid;
+  grid-template-columns:170px 1fr;
+  gap:16px;
+  padding:14px 0;
+}
 
-  .skill-label{
-    display:flex;
-    gap:10px;
-    align-items:center;
-    font-weight:800;
-    font-size:18px;
-    color:var(--text);
-    white-space:nowrap;
-  }
+@media (max-width:720px){
+  .skill-row{ grid-template-columns:1fr; }
+}
 
-  .skill-icon{
-    width:34px;
-    height:34px;
-    border-radius:10px;
-    background:var(--icon-bg);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border:1px solid var(--border);
-  }
+.skill-label{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  font-weight:800;
+  font-size:18px;
+  color:var(--text);
+  white-space:nowrap;
+}
 
-  .skill-tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-  }
+.skill-icon{
+  width:34px;
+  height:34px;
+  border-radius:10px;
+  background:var(--icon-bg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--border);
+}
 
-  .chip{
-    padding:8px 14px;
-    border-radius:999px;
-    font-weight:700;
-    font-size:14px;
-    background:var(--chip-bg);
-    color:var(--chip-text);
-    border:1px solid var(--chip-border);
-    white-space:nowrap;
-  }
+.skill-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
 
-  .chip:hover{
-    background:#f9fafb;
-    border-color:#9ca3af;
-  }
+.chip{
+  padding:8px 14px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:14px;
+  background:var(--chip-bg);
+  color:var(--chip-text);
+  border:1px solid var(--chip-border);
+  white-space:nowrap;
+}
+
+.chip:hover{
+  background:#f9fafb;
+  border-color:#9ca3af;
+}
 </style>
 
 <!-- =====================
@@ -218,7 +239,8 @@ permalink: /
   <div class="hero-hr"></div>
   <p>
     안녕하세요.<br>
-    기술을 이해하는 마케터 손승하입니다.
+    배운 것을 직접 적용하며 성장해온<br>
+    손승하입니다.
   </p>
 </section>
 
@@ -228,6 +250,10 @@ permalink: /
 <section class="about-wrap">
   <div class="about-title">🔗 ABOUT ME</div>
   <div class="about-hr"></div>
+
+  <div class="about-photo">
+    <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
+  </div>
 
   <div class="about-grid">
     <div class="about-item">
@@ -283,7 +309,7 @@ permalink: /
 <!-- =====================
      SKILLS
 ===================== -->
-<h2>🔗 SKILLS</h2>
+<h2 style="text-align:center;margin-top:60px;">🔗 SKILLS</h2>
 
 <div class="skill-box">
   <div class="skill-card">
