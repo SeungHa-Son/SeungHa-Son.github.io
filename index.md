@@ -57,7 +57,7 @@ permalink: /
 }
 
 /* =====================
-   SECTION TITLE (ABOUT / SKILLS 공통)
+   SECTION TITLE
 ===================== */
 .section-title{
   display:flex;
@@ -86,7 +86,6 @@ permalink: /
   padding:0 20px;
 }
 
-/* ✅ 사진(왼쪽) + 정보(오른쪽) 같은 줄 */
 .about-top{
   display:grid;
   grid-template-columns: 260px 1fr;
@@ -94,14 +93,13 @@ permalink: /
   align-items:start;
 }
 
-/* 사진 영역 */
 .about-photo{
   display:flex;
   justify-content:flex-start;
   margin-bottom:0;
 }
 
-/* ✅ 흐림 방지용: shadow/radius를 img가 아니라 frame에 적용 */
+/* frame에만 radius/shadow */
 .photo-frame{
   width:220px;
   height:280px;
@@ -116,17 +114,15 @@ permalink: /
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block; /* ✅ 미세한 흐림/여백 방지 */
+  display:block;
 }
 
-/* 오른쪽 정보 그리드 */
 .about-grid{
   display:grid;
   grid-template-columns: repeat(2, minmax(220px, 1fr));
   gap:22px 50px;
 }
 
-/* 모바일 */
 @media (max-width:820px){
   .about-top{
     grid-template-columns: 1fr;
@@ -140,7 +136,6 @@ permalink: /
   }
 }
 
-/* 모바일 사진 크기 */
 @media (max-width:480px){
   .photo-frame{
     width:170px;
@@ -266,9 +261,6 @@ permalink: /
 }
 </style>
 
-<!-- =====================
-     HERO
-===================== -->
 <section class="simple-hero">
   <h1>- 손승하 -</h1>
   <h2>AI시스템 전공 포트폴리오</h2>
@@ -280,9 +272,6 @@ permalink: /
   </p>
 </section>
 
-<!-- =====================
-     ABOUT ME
-===================== -->
 <section class="about-wrap">
   <div class="section-title">ABOUT ME</div>
   <div class="section-hr"></div>
@@ -290,7 +279,19 @@ permalink: /
   <div class="about-top">
     <div class="about-photo">
       <div class="photo-frame">
-        <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
+        <img
+          src="/assets/img/son-face-220x280-q95.jpg"
+          srcset="
+            /assets/img/son-face-170x220-q95.jpg 170w,
+            /assets/img/son-face-220x280-q95.jpg 220w,
+            /assets/img/son-face-340x440-q95.jpg 340w,
+            /assets/img/son-face-440x560-q95.jpg 440w
+          "
+          sizes="(max-width: 480px) 170px, 220px"
+          width="220"
+          height="280"
+          alt="손승하 프로필 사진"
+        >
       </div>
     </div>
 
@@ -346,9 +347,6 @@ permalink: /
   </div>
 </section>
 
-<!-- =====================
-     SKILLS
-===================== -->
 <div class="section-title">SKILLS</div>
 <div class="section-hr"></div>
 
