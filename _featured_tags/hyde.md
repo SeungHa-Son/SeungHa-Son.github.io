@@ -532,7 +532,6 @@ permalink: /
       </div>
       <div class="project-footer">
         <a class="project-btn" href="https://github.com/SeungHa-Son/Visual-impairment-mobility-aid" target="_blank" rel="noopener">GitHub Repo</a>
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Visual-impairment-mobility-aid#readme" target="_blank" rel="noopener">README</a>
       </div>
     </article>
 
@@ -556,9 +555,7 @@ permalink: /
         <span class="project-chip">Colab</span>
       </div>
       <div class="project-footer">
-        <!-- AI 커버 repo가 다른 계정일 수 있어서, 필요하면 링크만 바꿔줘 -->
         <a class="project-btn" href="https://github.com/hoo1suu/AI_cover" target="_blank" rel="noopener">GitHub Repo</a>
-        <a class="project-btn" href="https://github.com/hoo1suu/AI_cover#readme" target="_blank" rel="noopener">README</a>
       </div>
     </article>
 
@@ -582,7 +579,6 @@ permalink: /
       </div>
       <div class="project-footer">
         <a class="project-btn" href="https://github.com/SeungHa-Son/Database-GUI-Course-Registration" target="_blank" rel="noopener">GitHub Repo</a>
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Database-GUI-Course-Registration#readme" target="_blank" rel="noopener">README</a>
       </div>
     </article>
 
@@ -606,7 +602,6 @@ permalink: /
       </div>
       <div class="project-footer">
         <a class="project-btn" href="https://github.com/SeungHa-Son/Software-Education-Volunteering" target="_blank" rel="noopener">GitHub Repo</a>
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Software-Education-Volunteering#readme" target="_blank" rel="noopener">README</a>
       </div>
     </article>
 
