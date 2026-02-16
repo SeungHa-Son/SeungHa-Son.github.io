@@ -264,23 +264,17 @@ permalink: /
    PROJECTS
 ===================== */
 .projects-wrap{
-  max-width:1000px;
+  max-width:1100px;
   margin:20px auto 80px;
   padding:0 20px;
 }
 
-.projects-wrap{
-  max-width:1000px; /* 1000 -> 1100 조금 넓힘 */
-  margin:20px auto 80px;
-  padding:0 20px;
-}
-
+/* ✅ 1열로 넓게 */
 .projects-grid{
   display:grid;
-  grid-template-columns:1fr; /* ✅ PC도 1열로 */
+  grid-template-columns:1fr;
   gap:26px;
 }
-
 
 .project-card{
   background:#ffffff;
@@ -288,6 +282,14 @@ permalink: /
   border-radius:18px;
   padding:22px;
   box-shadow:0 12px 26px rgba(0,0,0,.12);
+}
+
+/* ✅ 배지 + GitHub 버튼 같은 줄 */
+.project-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
 }
 
 .project-badge{
@@ -347,30 +349,24 @@ permalink: /
   border-color:#9ca3af;
 }
 
-.project-footer{
-  margin-top:14px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
+/* ✅ GitHub 버튼: 배지 색으로 채우고 글자 흰색 */
 .project-btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding:10px 14px;
-  border-radius:12px;
-  border:1px solid #d1d5db;
-  background:#ffffff;
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid #ef4444;
+  background:#ef4444;
   font-weight:900;
-  font-size:14px;
+  font-size:13px;
   text-decoration:none;
-  color:#111111;
+  color:#ffffff;
+  line-height:1;
 }
 
 .project-btn:hover{
-  background:#f9fafb;
-  border-color:#9ca3af;
+  filter:brightness(0.95);
 }
 </style>
 
@@ -522,7 +518,11 @@ permalink: /
 
     <!-- 1. 시각장애인 보행 보조 장치 -->
     <article class="project-card">
-      <span class="project-badge">Capstone</span>
+      <div class="project-head">
+        <span class="project-badge">Capstone</span>
+        <a class="project-btn" href="https://github.com/SeungHa-Son/Visual-impairment-mobility-aid" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
       <div class="project-title">시각장애인 보행 보조 장치</div>
       <p class="project-desc">
         실시간 객체 인식 기반으로 주변 상황을 음성으로 안내해 보행 안전을 돕는 시스템
@@ -538,14 +538,15 @@ permalink: /
         <span class="project-chip">OpenCV</span>
         <span class="project-chip">Raspberry Pi</span>
       </div>
-      <div class="project-footer">
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Visual-impairment-mobility-aid" target="_blank" rel="noopener">GitHub</a>
-      </div>
     </article>
 
     <!-- 2. AI 음성 변환 프로젝트 -->
     <article class="project-card">
-      <span class="project-badge">AI</span>
+      <div class="project-head">
+        <span class="project-badge">AI</span>
+        <a class="project-btn" href="https://github.com/hoo1suu/AI_cover" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
       <div class="project-title">AI 음성 변환 프로젝트</div>
       <p class="project-desc">
         보컬 분리 → 음성 변환 → 합성까지 이어지는 AI 커버 생성 파이프라인(프로토타입)
@@ -560,14 +561,15 @@ permalink: /
         <span class="project-chip">Gradio</span>
         <span class="project-chip">SVC/VITS</span>
       </div>
-      <div class="project-footer">
-        <a class="project-btn" href="https://github.com/hoo1suu/AI_cover" target="_blank" rel="noopener">GitHub</a>
-      </div>
     </article>
 
     <!-- 3. 데이터베이스 수강신청 GUI -->
     <article class="project-card">
-      <span class="project-badge">DB / GUI</span>
+      <div class="project-head">
+        <span class="project-badge">DB / GUI</span>
+        <a class="project-btn" href="https://github.com/SeungHa-Son/Database-GUI-Course-Registration" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
       <div class="project-title">데이터베이스 수강신청 GUI</div>
       <p class="project-desc">
         DB 설계 기반으로 수강신청/조회/관리 기능을 GUI로 구현한 데스크톱 프로그램
@@ -583,14 +585,15 @@ permalink: /
         <span class="project-chip">DB Design</span>
         <span class="project-chip">GUI</span>
       </div>
-      <div class="project-footer">
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Database-GUI-Course-Registration" target="_blank" rel="noopener">GitHub</a>
-      </div>
     </article>
 
     <!-- 4. 초·중학생 대상으로 한 SW 교육기부 활동 -->
     <article class="project-card">
-      <span class="project-badge">Volunteering</span>
+      <div class="project-head">
+        <span class="project-badge">Volunteering</span>
+        <a class="project-btn" href="https://github.com/SeungHa-Son/Software-Education-Volunteering" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
       <div class="project-title">초·중학생 대상 SW 교육기부 활동</div>
       <p class="project-desc">
         초·중학생 눈높이에 맞춘 Python 기초 교육 자료 제작 및 수업 진행 경험
@@ -602,9 +605,6 @@ permalink: /
       </ul>
       <div class="project-tags">
         <span class="project-chip">Python</span>
-      </div>
-      <div class="project-footer">
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Software-Education-Volunteering" target="_blank" rel="noopener">GitHub</a>
       </div>
     </article>
 
