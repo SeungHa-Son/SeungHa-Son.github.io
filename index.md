@@ -327,15 +327,21 @@ permalink: /
   gap:10px;
 }
 
+/* ✅ project-chip 색상을 skills chip과 통일 */
 .project-chip{
   padding:8px 14px;
   border-radius:999px;
-  font-weight:800;
-  font-size:13px;
-  background:#fff7ed;
-  color:#92400e;
-  border:1px solid #f59e0b;
+  font-weight:700;
+  font-size:14px;
+  background:var(--chip-bg);
+  color:var(--chip-text);
+  border:1px solid var(--chip-border);
   white-space:nowrap;
+}
+
+.project-chip:hover{
+  background:#f9fafb;
+  border-color:#9ca3af;
 }
 
 .project-footer{
@@ -527,17 +533,16 @@ permalink: /
         <span class="project-chip">Python</span>
         <span class="project-chip">YOLO</span>
         <span class="project-chip">OpenCV</span>
-        <span class="project-chip">TTS</span>
         <span class="project-chip">Raspberry Pi</span>
       </div>
       <div class="project-footer">
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Visual-impairment-mobility-aid" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="project-btn" href="https://github.com/SeungHa-Son/Visual-impairment-mobility-aid" target="_blank" rel="noopener">GitHub</a>
       </div>
     </article>
 
     <!-- 2. AI 음성 변환 프로젝트 -->
     <article class="project-card">
-      <span class="project-badge">AI / Audio</span>
+      <span class="project-badge">AI</span>
       <div class="project-title">AI 음성 변환 프로젝트</div>
       <p class="project-desc">
         보컬 분리 → 음성 변환 → 합성까지 이어지는 AI 커버 생성 파이프라인(프로토타입)
@@ -551,11 +556,9 @@ permalink: /
         <span class="project-chip">Python</span>
         <span class="project-chip">Gradio</span>
         <span class="project-chip">SVC/VITS</span>
-        <span class="project-chip">Audio</span>
-        <span class="project-chip">Colab</span>
       </div>
       <div class="project-footer">
-        <a class="project-btn" href="https://github.com/hoo1suu/AI_cover" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="project-btn" href="https://github.com/hoo1suu/AI_cover" target="_blank" rel="noopener">GitHub</a>
       </div>
     </article>
 
@@ -578,7 +581,7 @@ permalink: /
         <span class="project-chip">GUI</span>
       </div>
       <div class="project-footer">
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Database-GUI-Course-Registration" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="project-btn" href="https://github.com/SeungHa-Son/Database-GUI-Course-Registration" target="_blank" rel="noopener">GitHub</a>
       </div>
     </article>
 
@@ -596,12 +599,9 @@ permalink: /
       </ul>
       <div class="project-tags">
         <span class="project-chip">Python</span>
-        <span class="project-chip">Teaching</span>
-        <span class="project-chip">Curriculum</span>
-        <span class="project-chip">PDF</span>
       </div>
       <div class="project-footer">
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Software-Education-Volunteering" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="project-btn" href="https://github.com/SeungHa-Son/Software-Education-Volunteering" target="_blank" rel="noopener">GitHub</a>
       </div>
     </article>
 
