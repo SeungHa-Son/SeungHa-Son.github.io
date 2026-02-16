@@ -349,21 +349,28 @@ permalink: /
   border-color:#9ca3af;
 }
 
-/* ✅ GitHub 버튼: 배지 색으로 채우고 글자 흰색 */
+/* ✅ GitHub 버튼: 글자색(블루) 배경 + 흰색 글자 */
 .project-btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   padding:8px 12px;
   border-radius:10px;
-  border:1px solid #ef4444;
-  background:#ef4444;
+
+  background:#0ea5e9 !important;   /* 버튼 배경(블루) */
+  border:1px solid #0ea5e9 !important;
+  color:#ffffff !important;        /* 글자 흰색 */
+
   font-weight:900;
   font-size:13px;
   text-decoration:none;
-  color:#ffffff;
   line-height:1;
 }
+
+.project-btn:hover{
+  filter:brightness(0.95);
+}
+
 
 .project-btn:hover{
   filter:brightness(0.95);
