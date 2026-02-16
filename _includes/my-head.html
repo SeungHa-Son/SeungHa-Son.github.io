@@ -4,7 +4,8 @@
 <noscript><link href="<path/to/content.css>" rel="stylesheet"></noscript>
 {% endcomment %}
 
-<!-- 🔥 파비콘 -->
-<link rel="icon" href="{{ '/assets/img/son-name.png' | relative_url }}" type="image/png">
-<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+<!-- 🔥 파비콘 (son-name.png만 사용) -->
+<link rel="icon" type="image/png" href="{{ '/assets/img/son-name.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/img/son-name.png' | relative_url }}">
+
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
