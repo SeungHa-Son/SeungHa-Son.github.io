@@ -94,12 +94,20 @@ permalink: /
 }
 
 .about-photo img{
-  width:140px;
-  height:180px;
+  width:220px;           /* ✅ 사진 크기 키움 */
+  height:280px;          /* ✅ 사진 크기 키움 */
   object-fit:cover;
   border-radius:14px;
   border:1px solid #e5e7eb;
   box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* 모바일에서 너무 커지지 않게 */
+@media (max-width: 480px){
+  .about-photo img{
+    width:170px;
+    height:220px;
+  }
 }
 
 /* 정보 그리드 */
