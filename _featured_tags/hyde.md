@@ -86,49 +86,55 @@ permalink: /
   padding:0 20px;
 }
 
+/* ✅ 사진(왼쪽) + 정보(오른쪽) 같은 줄로 */
+.about-top{
+  display:grid;
+  grid-template-columns: 260px 1fr; /* 왼쪽 사진 / 오른쪽 정보 */
+  gap: 30px 60px;
+  align-items:start;
+}
+
 /* 프로필 사진 */
 .about-photo{
   display:flex;
-  justify-content:center;
-  margin-bottom:40px;
+  justify-content:flex-start; /* 왼쪽 정렬 */
+  margin-bottom:0;            /* 아래 여백 제거 */
 }
 
 .about-photo img{
-  width:220px;        /* 사진 크기 */
-  height:280px;       /* 사진 크기 */
+  width:220px;
+  height:280px;
   object-fit:cover;
   border-radius:14px;
   border:1px solid #e5e7eb;
   box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
-@media (max-width: 480px){
-  .about-photo img{
-    width:170px;
-    height:220px;
-  }
-}
-
-/* ✅ 정보 그리드 (열 정렬 개선) */
+/* 정보 그리드 (오른쪽 영역 안에서 2열) */
 .about-grid{
   display:grid;
-  grid-template-columns: 360px 360px; /* 두 열 폭 고정 */
-  gap:22px 50px;                      /* 간격 조절 */
-  justify-content:center;             /* 전체 가운데 정렬 */
-  align-items:start;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap:22px 50px;
 }
 
+/* 모바일에서는 세로로 쌓기 */
 @media (max-width:820px){
+  .about-top{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .about-photo{
+    justify-content:center; /* 모바일은 사진 중앙 */
+  }
   .about-grid{
     grid-template-columns:1fr;
-    justify-content:stretch;
   }
 }
 
 .about-item{
   display:flex;
   gap:16px;
-  align-items:center; /* 아이콘/텍스트 수평 정렬 */
+  align-items:center;
 }
 
 .about-icon{
@@ -264,56 +270,59 @@ permalink: /
   <div class="section-title">ABOUT ME</div>
   <div class="section-hr"></div>
 
-  <div class="about-photo">
-    <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
-  </div>
-
-  <div class="about-grid">
-    <div class="about-item">
-      <div class="about-icon">👤</div>
-      <div>
-        <div class="about-label">이름</div>
-        <div class="about-value">손승하</div>
-      </div>
+  <!-- ✅ 여기서부터 구조 변경: 사진 왼쪽, 정보 오른쪽 -->
+  <div class="about-top">
+    <div class="about-photo">
+      <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
     </div>
 
-    <div class="about-item">
-      <div class="about-icon">📅</div>
-      <div>
-        <div class="about-label">생년</div>
-        <div class="about-value">2002년</div>
+    <div class="about-grid">
+      <div class="about-item">
+        <div class="about-icon">👤</div>
+        <div>
+          <div class="about-label">이름</div>
+          <div class="about-value">손승하</div>
+        </div>
       </div>
-    </div>
 
-    <div class="about-item">
-      <div class="about-icon">📍</div>
-      <div>
-        <div class="about-label">위치</div>
-        <div class="about-value">경기도 수원시</div>
+      <div class="about-item">
+        <div class="about-icon">📅</div>
+        <div>
+          <div class="about-label">생년</div>
+          <div class="about-value">2002년</div>
+        </div>
       </div>
-    </div>
 
-    <div class="about-item">
-      <div class="about-icon">📞</div>
-      <div>
-        <div class="about-label">연락처</div>
-        <div class="about-value">010-5535-1932</div>
+      <div class="about-item">
+        <div class="about-icon">📍</div>
+        <div>
+          <div class="about-label">위치</div>
+          <div class="about-value">경기도 수원시</div>
+        </div>
       </div>
-    </div>
 
-    <div class="about-item">
-      <div class="about-icon">✉️</div>
-      <div>
-        <div class="about-label">이메일</div>
-        <div class="about-value">ssha0730@naver.com</div>
+      <div class="about-item">
+        <div class="about-icon">📞</div>
+        <div>
+          <div class="about-label">연락처</div>
+          <div class="about-value">010-5535-1932</div>
+        </div>
       </div>
-    </div>
 
-    <div class="about-item">
-      <div class="about-icon">🎓</div>
-      <div>
-        <div class="about-label">학력</div>
-        <div class="about-value">대림대학교 AI시스템학과</div>
+      <div class="about-item">
+        <div class="about-icon">✉️</div>
+        <div>
+          <div class="about-label">이메일</div>
+          <div class="about-value">ssha0730@naver.com</div>
+        </div>
+      </div>
+
+      <div class="about-item">
+        <div class="about-icon">🎓</div>
+        <div>
+          <div class="about-label">학력</div>
+          <div class="about-value">대림대학교 AI시스템학과</div>
+        </div>
       </div>
     </div>
   </div>
