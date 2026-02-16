@@ -64,13 +64,13 @@ permalink: /
   justify-content:center;
   align-items:center;
   gap:12px;
-  font-size:28px;        /* ✅ 두 섹션 제목 크기 통일 */
+  font-size:28px;
   font-weight:900;
   margin:60px 0 10px;
 }
 
 .section-hr{
-  width:90px;            /* ✅ 밑줄 길이도 통일 */
+  width:90px;
   height:3px;
   background:#111;
   margin:0 auto 30px;
@@ -94,15 +94,14 @@ permalink: /
 }
 
 .about-photo img{
-  width:220px;           /* ✅ 사진 크기 키움 */
-  height:280px;          /* ✅ 사진 크기 키움 */
+  width:220px;        /* 사진 크기 */
+  height:280px;       /* 사진 크기 */
   object-fit:cover;
   border-radius:14px;
   border:1px solid #e5e7eb;
   box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
-/* 모바일에서 너무 커지지 않게 */
 @media (max-width: 480px){
   .about-photo img{
     width:170px;
@@ -110,23 +109,26 @@ permalink: /
   }
 }
 
-/* 정보 그리드 */
+/* ✅ 정보 그리드 (열 정렬 개선) */
 .about-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:26px 70px;
+  grid-template-columns: 360px 360px; /* 두 열 폭 고정 */
+  gap:22px 50px;                      /* 간격 조절 */
+  justify-content:center;             /* 전체 가운데 정렬 */
+  align-items:start;
 }
 
 @media (max-width:820px){
   .about-grid{
     grid-template-columns:1fr;
+    justify-content:stretch;
   }
 }
 
 .about-item{
   display:flex;
   gap:16px;
-  align-items:flex-start;
+  align-items:center; /* 아이콘/텍스트 수평 정렬 */
 }
 
 .about-icon{
