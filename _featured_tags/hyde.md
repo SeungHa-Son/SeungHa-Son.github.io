@@ -269,15 +269,18 @@ permalink: /
   padding:0 20px;
 }
 
+.projects-wrap{
+  max-width:1200px; /* 1000 -> 1100 조금 넓힘 */
+  margin:20px auto 80px;
+  padding:0 20px;
+}
+
 .projects-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr; /* ✅ PC도 1열로 */
   gap:26px;
 }
 
-@media (max-width:920px){
-  .projects-grid{ grid-template-columns:1fr; }
-}
 
 .project-card{
   background:#ffffff;
