@@ -86,48 +86,65 @@ permalink: /
   padding:0 20px;
 }
 
-/* ✅ 사진(왼쪽) + 정보(오른쪽) 같은 줄로 */
+/* ✅ 사진(왼쪽) + 정보(오른쪽) 같은 줄 */
 .about-top{
   display:grid;
-  grid-template-columns: 260px 1fr; /* 왼쪽 사진 / 오른쪽 정보 */
+  grid-template-columns: 260px 1fr;
   gap: 30px 60px;
   align-items:start;
 }
 
-/* 프로필 사진 */
+/* 사진 영역 */
 .about-photo{
   display:flex;
-  justify-content:flex-start; /* 왼쪽 정렬 */
-  margin-bottom:0;            /* 아래 여백 제거 */
+  justify-content:flex-start;
+  margin-bottom:0;
 }
 
-.about-photo img{
+/* ✅ 흐림 방지용: shadow/radius를 img가 아니라 frame에 적용 */
+.photo-frame{
   width:220px;
   height:280px;
-  object-fit:cover;
   border-radius:14px;
+  overflow:hidden;
   border:1px solid #e5e7eb;
   box-shadow:0 8px 20px rgba(0,0,0,.15);
+  background:#fff;
 }
 
-/* 정보 그리드 (오른쪽 영역 안에서 2열) */
+.photo-frame img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block; /* ✅ 미세한 흐림/여백 방지 */
+}
+
+/* 오른쪽 정보 그리드 */
 .about-grid{
   display:grid;
   grid-template-columns: repeat(2, minmax(220px, 1fr));
   gap:22px 50px;
 }
 
-/* 모바일에서는 세로로 쌓기 */
+/* 모바일 */
 @media (max-width:820px){
   .about-top{
     grid-template-columns: 1fr;
     gap: 24px;
   }
   .about-photo{
-    justify-content:center; /* 모바일은 사진 중앙 */
+    justify-content:center;
   }
   .about-grid{
     grid-template-columns:1fr;
+  }
+}
+
+/* 모바일 사진 크기 */
+@media (max-width:480px){
+  .photo-frame{
+    width:170px;
+    height:220px;
   }
 }
 
@@ -270,10 +287,11 @@ permalink: /
   <div class="section-title">ABOUT ME</div>
   <div class="section-hr"></div>
 
-  <!-- ✅ 여기서부터 구조 변경: 사진 왼쪽, 정보 오른쪽 -->
   <div class="about-top">
     <div class="about-photo">
-      <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
+      <div class="photo-frame">
+        <img src="/assets/img/son-face.jpg" alt="손승하 프로필 사진">
+      </div>
     </div>
 
     <div class="about-grid">
