@@ -531,7 +531,7 @@ permalink: /
         <span class="project-chip">Raspberry Pi</span>
       </div>
       <div class="project-footer">
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Visual-impairment-mobility-aid" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="project-btn" href="https://github.com/SeungHa-Son/Visual-impairment-mobility-aid" target="_blank" rel="noopener">GitHub </a>
       </div>
     </article>
 
@@ -555,7 +555,7 @@ permalink: /
         <span class="project-chip">Colab</span>
       </div>
       <div class="project-footer">
-        <a class="project-btn" href="https://github.com/hoo1suu/AI_cover" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="project-btn" href="https://github.com/hoo1suu/AI_cover" target="_blank" rel="noopener">GitHub </a>
       </div>
     </article>
 
@@ -578,7 +578,7 @@ permalink: /
         <span class="project-chip">GUI</span>
       </div>
       <div class="project-footer">
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Database-GUI-Course-Registration" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="project-btn" href="https://github.com/SeungHa-Son/Database-GUI-Course-Registration" target="_blank" rel="noopener">GitHub </a>
       </div>
     </article>
 
@@ -601,7 +601,7 @@ permalink: /
         <span class="project-chip">PDF</span>
       </div>
       <div class="project-footer">
-        <a class="project-btn" href="https://github.com/SeungHa-Son/Software-Education-Volunteering" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="project-btn" href="https://github.com/SeungHa-Son/Software-Education-Volunteering" target="_blank" rel="noopener">GitHub </a>
       </div>
     </article>
 
