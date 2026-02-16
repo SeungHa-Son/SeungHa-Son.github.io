@@ -270,7 +270,7 @@ permalink: /
 }
 
 .projects-wrap{
-  max-width:1200px; /* 1000 -> 1100 조금 넓힘 */
+  max-width:1000px; /* 1000 -> 1100 조금 넓힘 */
   margin:20px auto 80px;
   padding:0 20px;
 }
